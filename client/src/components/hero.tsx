@@ -10,6 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const formSchema = z.object({
   plaga: z.string().min(1, "Seleccione un tipo de plaga"),
+  email: z.string().email("Ingrese un correo válido"),
   contacto: z.string().min(1, "Ingrese su teléfono o WhatsApp"),
 });
 
@@ -18,6 +19,7 @@ export default function Hero() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       plaga: "",
+      email: "",
       contacto: "",
     },
   });
@@ -100,7 +102,7 @@ export default function Hero() {
                                 <SelectValue placeholder="Seleccione la plaga o servicio" />
                               </SelectTrigger>
                             </FormControl>
-                            <SelectContent>
+                            <SelectContent className="bg-white">
                               <SelectItem value="ratas">Desratización (Roedores)</SelectItem>
                               <SelectItem value="insectos">Desinsectación (Insectos)</SelectItem>
                               <SelectItem value="sanitizacion">Sanitización (Virus/Bacterias)</SelectItem>
@@ -112,6 +114,20 @@ export default function Hero() {
                       )}
                     />
                     
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="font-semibold text-gray-700">Correo Electrónico</FormLabel>
+                          <FormControl>
+                            <Input placeholder="ejemplo@correo.com" {...field} className="h-12 border-gray-200 bg-white" />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
                     <FormField
                       control={form.control}
                       name="contacto"

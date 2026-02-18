@@ -63,7 +63,7 @@ export default function Navbar() {
             <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-[hsl(212,32%,16%)] hover:text-[hsl(168,64%,44%)] transition-colors outline-none cursor-pointer">
               Servicios <ChevronDown className="w-4 h-4" />
             </DropdownMenuTrigger>
-            <DropdownMenuContent>
+            <DropdownMenuContent className="bg-white">
               <DropdownMenuItem>Desratización</DropdownMenuItem>
               <DropdownMenuItem>Desinsectación</DropdownMenuItem>
               <DropdownMenuItem>Sanitización</DropdownMenuItem>
