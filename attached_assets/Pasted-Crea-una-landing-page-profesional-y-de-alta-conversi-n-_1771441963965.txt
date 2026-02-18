@@ -1,0 +1,81 @@
+Crea una landing page profesional y de alta conversión para "Andes Plagas", siguiendo estrictamente la jerarquía visual y el estilo de la imagen de referencia proporcionada.
+
+DISEÑO Y ESTÉTICA:
+
+Paleta de Colores: Teal/Verde agua (#26B89A), Naranja vibrante (#E8762E), Azul Marino muy oscuro (#1B2735) y Blanco puro.
+
+Tipografía: Sans-serif moderna (tipo Montserrat o Inter). Títulos en negrita y cuerpo de texto con buen interlineado.
+
+Estilo Visual: Limpio, corporativo y sanitario. Uso de sombras suaves (drop shadows) en tarjetas y formularios para dar profundidad.
+
+Iconografía: Íconos lineales y minimalistas en color verde agua para los servicios.
+
+NAVBAR (HEADER):
+
+Logo: Texto "AP andes plagas" con el isotipo en verde a la izquierda.
+
+Menú central: Inicio, Empresas, Hogar, Servicios (con dropdown), Certificaciones.
+
+Botón CTA Derecha: Botón naranja redondeado "[COTIZAR AHORA]" con texto en blanco.
+
+HERO SECTION:
+
+Fondo: Fotografía de alta calidad de dos técnicos en primer plano vistiendo trajes de protección (EPP) blancos en un pasillo iluminado.
+
+Contenido Izquierda: - Título H1: "Control Profesional de Plagas y Sanitización en Santiago" en azul marino.
+
+Subtítulo: "Protegemos tu salud y tu negocio con protocolos certificados y Resolución Sanitaria al día."
+
+Botones: Uno verde agua ("[Ver Planes Empresas]") y uno azul marino ("[Ver Soluciones Hogar]").
+
+Contenido Derecha (Floating Form):
+
+Tarjeta blanca con bordes redondeados y sombra.
+
+Título: "¿Buscas un presupuesto?".
+
+Inputs: "Tipo de plaga" (dropdown), "WhatsApp / Teléfono".
+
+Botón: Naranja ancho "[SOLICITAR COTIZACIÓN]".
+
+TRUST BAR (LOGOS):
+
+Texto centrado: "Más de 500 empresas confían en nuestra gestión anual."
+
+Cinta horizontal con logos de empresas en escala de grises (marcas tipo AgroCorp, Foodie, etc.) con efecto de scroll infinito o grid estático.
+
+SECCIÓN DE SERVICIOS:
+
+Título centrado: "Servicios".
+
+Grid de 3 Tarjetas Blancas:
+
+Desratización: Ícono de roedor verde, título "Soluciones para Empresas", imagen inferior de reunión profesional.
+
+Desinsectación: Ícono de insecto verde, texto sobre normativa SEREMI y checklist con tildes verdes ("Reportes técnicos", "Calendario").
+
+Sanitización: Ícono de bioriesgo verde, texto sobre cumplimiento legal y resolución sanitaria vigente.
+
+FOOTER (ESTILO OSCURO):
+
+Fondo: Azul marino oscuro (#1B2735).
+
+Contenido: - Logo en blanco a la izquierda con el eslogan "Líderes en sanidad ambiental en la RM".
+
+Centro: Enlaces de SEO local (Fumigaciones en Melipilla, Santiago Centro, Providencia, etc.).
+
+Derecha: Datos de contacto (Teléfono clickeable, email) e íconos de redes sociales en círculos verdes.
+
+Elemento decorativo: Una estrella/rombo de cuatro puntas en la esquina inferior derecha.
+
+CARACTERÍSTICAS TÉCNICAS PARA REPLIT:
+
+Utiliza React con Tailwind CSS.
+
+Implementa Lucide-react para los íconos.
+
+Asegura que el formulario de la Hero Section sea responsive y se apile sobre el texto en móviles.
+
+El Navbar debe ser "sticky" (fijo al hacer scroll).
+
+Añade efectos de hover en todos los botones (cambio ligero de tono).
