@@ -1,0 +1,238 @@
+Crea una subpágina altamente persuasiva para el servicio de **Sanitización Profesional** de la empresa **Andes Plagas**, enfocada en conversión directa (generación de cotizaciones y contactos inmediatos).
+
+Debe mantener coherencia visual con el sitio principal (estructura hero con formulario lateral, bloques de autoridad, CTA fuertes), pero optimizada como landing comercial.
+
+Desarrollar usando **React con componentes funcionales y hooks** y **Tailwind CSS**, con enfoque mobile-first, accesibilidad, velocidad y optimización para conversiones.
+
+---------------------------------------------------
+
+OBJETIVO PRINCIPAL:
+Generar solicitudes inmediatas de:
+- Cotización
+- Evaluación sanitaria
+- Contacto por WhatsApp
+
+---------------------------------------------------
+
+DESCRIPCIÓN DEL SERVICIO:
+
+Andes Plagas ofrece servicio profesional de sanitización y desinfección para empresas, industrias y hogares en Santiago y todo Chile. Utilizamos productos certificados, protocolos SEREMI y equipos de nebulización y pulverización de alta eficacia.
+
+Ideal para:
+- Oficinas
+- Clínicas
+- Restaurantes
+- Colegios
+- Industrias
+- Hogares
+
+---------------------------------------------------
+
+ESTRUCTURA DE DISEÑO BASE:
+
+- Header coherente con sitio principal
+- Hero impactante con fondo oscuro profesional
+- Formulario visible sin hacer scroll (above the fold)
+- Secciones cortas, claras y persuasivas
+- Bloques de autoridad y confianza
+- CTA repetidos estratégicamente
+- Footer completo
+
+---------------------------------------------------
+
+PALETA DE COLORES:
+
+- Verde corporativo (#1F7A5C)
+- Naranja CTA (#F97316)
+- Texto principal: #0F172A
+- Texto secundario: #64748B
+- Fondo claro: #F8FAFC
+- Secciones destacadas: fondo oscuro profesional
+
+---------------------------------------------------
+
+HEADER:
+
+Navegación estándar.
+Botón destacado: “Cotizar Sanitización”
+
+---------------------------------------------------
+
+SECCIÓN HERO (ULTRA PERSUASIVA):
+
+Título principal (H1):
+“Servicio Profesional de Sanitización en Santiago y Todo Chile”
+
+Subtítulo:
+Desinfección certificada para eliminar virus, bacterias y agentes contaminantes en espacios laborales y residenciales.
+
+Bullets de impacto:
+✔ Productos certificados y seguros  
+✔ Técnicos especializados  
+✔ Atención rápida en Santiago  
+✔ Cobertura nacional  
+✔ Resolución sanitaria al día  
+
+Botones:
+- CTA Primario (naranja): “Solicitar Sanitización Ahora”
+- CTA Secundario (outline): “Hablar por WhatsApp”
+
+Imagen de fondo:
+Técnico con traje de protección realizando sanitización con nebulizador (Unsplash relacionado a disinfecting service)
+
+Formulario lateral visible:
+- Tipo de espacio (Oficina, Local Comercial, Industria, Hogar)
+- Metros aproximados
+- Email
+- Teléfono
+- Botón grande naranja: “Solicitar Evaluación Inmediata”
+
+Texto de urgencia debajo del botón:
+“Respuesta en menos de 15 minutos”
+
+---------------------------------------------------
+
+SECCIÓN: ¿CUÁNDO NECESITAS SANITIZAR?
+
+Diseño en 3-4 tarjetas con íconos:
+
+- Después de contagios o brotes
+- Antes de fiscalizaciones
+- Protocolos preventivos periódicos
+- Reapertura de espacios
+
+Mensaje claro:
+“La prevención evita multas, contagios y cierres.”
+
+---------------------------------------------------
+
+SECCIÓN: NUESTRO MÉTODO CERTIFICADO
+
+4 pasos en horizontal:
+
+1. Evaluación técnica
+2. Aplicación con equipos de nebulización ULV
+3. Productos autorizados
+4. Certificado de sanitización entregado
+
+Cada paso con ícono y micro-descripción.
+
+---------------------------------------------------
+
+SECCIÓN DE BENEFICIOS (FOCO EN DOLOR DEL CLIENTE):
+
+Bloque fondo claro con 2 columnas:
+
+Columna izquierda:
+- Eliminación de agentes patógenos
+- Cumplimiento normativo
+- Protección para trabajadores y clientes
+- Mejora imagen empresarial
+
+Columna derecha:
+Imagen profesional de sanitización industrial
+
+---------------------------------------------------
+
+SECCIÓN DE PRUEBA SOCIAL:
+
+Título:
+“Empresas que confían en nosotros”
+
+3 testimonios orientados a empresas:
+- Oficina corporativa
+- Restaurante
+- Industria
+
+Texto enfocado en rapidez, profesionalismo y cumplimiento sanitario.
+
+---------------------------------------------------
+
+SECCIÓN DE COBERTURA:
+
+Título:
+“Sanitización en Santiago y todo Chile”
+
+Lista destacada:
+- Región Metropolitana
+- Valparaíso
+- Concepción
+- Antofagasta
+- Temuco
+- Servicio Nacional
+
+Incluir mensaje:
+“Coordinamos servicios en todo el país.”
+
+---------------------------------------------------
+
+SECCIÓN CTA FINAL (ALTA CONVERSIÓN):
+
+Bloque oscuro con alto contraste.
+
+Título grande:
+“Protege tu espacio hoy mismo”
+
+Subtexto:
+Agenda tu sanitización profesional con atención inmediata.
+
+Botón naranja grande:
+“Solicitar Sanitización Ahora”
+
+Botón secundario:
+WhatsApp Directo
+
+Click-to-call visible.
+
+---------------------------------------------------
+
+FOOTER:
+
+- Dirección: Santiago, Chile
+- Teléfono
+- WhatsApp
+- Correo
+- Horarios
+- Certificaciones
+- Enlaces rápidos
+
+---------------------------------------------------
+
+OPTIMIZACIÓN SEO:
+
+Title:
+Sanitización Profesional en Santiago | Andes Plagas
+
+Meta Description:
+Servicio de sanitización y desinfección profesional en Santiago y todo Chile. Protocolos certificados, atención rápida y cobertura nacional.
+
+Palabras clave:
+sanitización en Santiago, desinfección profesional Chile, empresa de sanitización certificada
+
+H1 único.
+Schema LocalBusiness.
+Carga rápida.
+Imágenes con lazy loading.
+
+---------------------------------------------------
+
+FUNCIONALIDADES ADICIONALES:
+
+- Botón flotante WhatsApp
+- Formularios con validación
+- Animaciones suaves en scroll
+- Diseño 100% responsive
+- Enfoque mobile-first
+- Componentes reutilizables
+- Optimización de velocidad
+
+---------------------------------------------------
+
+PRINCIPIOS DE CONVERSIÓN:
+
+- CTA visible cada 2 secciones
+- Lenguaje claro y directo
+- Mensajes de urgencia
+- Prueba social
+- Autoridad sanitaria
+- Eliminación de fricción en formulario

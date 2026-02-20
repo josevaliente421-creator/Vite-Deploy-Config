@@ -27,7 +27,8 @@ const services = [
     description: "Desinfección de ambientes contra virus, bacterias y hongos patógenos.",
     features: ["Cumplimiento legal", "Resolución vigente", "Ambientes seguros"],
     image: "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&q=80&w=800", // Stock placeholder
-    color: "hsl(212,32%,16%)"
+    color: "hsl(212,32%,16%)",
+    slug: "/servicios/sanitizacion"
   }
 ];
 

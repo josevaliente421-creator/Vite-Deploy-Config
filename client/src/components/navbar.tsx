@@ -68,7 +68,9 @@ export default function Navbar() {
                 <Link href="/servicios/desratizacion" className="w-full cursor-pointer">Desratización</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>Desinsectación</DropdownMenuItem>
-              <DropdownMenuItem>Sanitización</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/servicios/sanitizacion" className="w-full cursor-pointer">Sanitización</Link>
+              </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
 
