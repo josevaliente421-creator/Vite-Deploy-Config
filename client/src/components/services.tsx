@@ -1,6 +1,7 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Rat, Bug, ShieldCheck, Check } from "lucide-react";
+import { Link } from "wouter";
 
 const services = [
   {
@@ -9,7 +10,8 @@ const services = [
     description: "Control efectivo de roedores con cebos seguros y estaciones monitoreadas.",
     features: ["Soluciones para Empresas", "Control preventivo", "Certificado SEREMI"],
     image: "/service-1.png", // Using the generated image
-    color: "hsl(168,64%,44%)"
+    color: "hsl(168,64%,44%)",
+    slug: "/servicios/desratizacion"
   },
   {
     title: "Desinsectación",
@@ -81,9 +83,17 @@ export default function Services() {
               </CardContent>
               
               <CardFooter className="pt-0 mt-auto">
-                <Button variant="outline" className="w-full border-[hsl(168,64%,44%)] text-[hsl(168,64%,44%)] hover:bg-[hsl(168,64%,44%)] hover:text-white font-semibold group-hover:bg-[hsl(168,64%,44%)] group-hover:text-white transition-all">
-                  Más Información
-                </Button>
+                {service.slug ? (
+                  <Link href={service.slug} className="w-full">
+                    <Button variant="outline" className="w-full border-[hsl(168,64%,44%)] text-[hsl(168,64%,44%)] hover:bg-[hsl(168,64%,44%)] hover:text-white font-semibold group-hover:bg-[hsl(168,64%,44%)] group-hover:text-white transition-all cursor-pointer">
+                      Más Información
+                    </Button>
+                  </Link>
+                ) : (
+                  <Button variant="outline" className="w-full border-[hsl(168,64%,44%)] text-[hsl(168,64%,44%)] hover:bg-[hsl(168,64%,44%)] hover:text-white font-semibold group-hover:bg-[hsl(168,64%,44%)] group-hover:text-white transition-all">
+                    Más Información
+                  </Button>
+                )}
               </CardFooter>
             </Card>
           ))}

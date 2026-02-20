@@ -1,0 +1,209 @@
+Crea una subpágina específica para el servicio de **Desratización Profesional** de la empresa **Andes Plagas**, especializada en control de plagas y sanitización. Esta página debe mantener coherencia visual con el sitio principal, replicando su estructura y layout base (hero con formulario lateral, secciones informativas, bloques de confianza y contacto), pero enfocada 100% en el servicio de desratización.
+
+Debe construirse usando **React** con componentes funcionales y hooks, junto con **Tailwind CSS**, con enfoque en accesibilidad, estructura modular, SEO y diseño responsive.
+
+---------------------------------------------------
+
+DESCRIPCIÓN DEL NEGOCIO:
+
+Andes Plagas es una empresa especializada en control profesional de plagas y sanitización con base en Santiago de Chile, ofreciendo servicios en todo el territorio nacional. Cuenta con protocolos certificados y cumplimiento normativo SEREMI, entregando soluciones rápidas, seguras y efectivas para empresas y hogares.
+
+---------------------------------------------------
+
+TIPO DE NEGOCIO:
+Empresa de Servicios Profesionales – Control de Plagas
+
+---------------------------------------------------
+
+ESTRUCTURA DE DISEÑO BASE (replicar del sitio principal):
+
+- Header superior con logo a la izquierda
+- Menú de navegación: Inicio, Empresas, Hogar, Servicios, Certificaciones
+- Botón CTA destacado a la derecha: "Cotizar Ahora"
+- Hero amplio con imagen de fondo oscurecida
+- Texto principal a la izquierda
+- Formulario de cotización en tarjeta flotante a la derecha
+- Sección de logos de confianza
+- Secciones informativas en bloques alternados (imagen + texto)
+- Footer completo con datos de contacto y cobertura
+
+---------------------------------------------------
+
+PALETA DE COLORES (mantener coherencia con marca actual):
+
+- Color Primario: Verde corporativo (#1F7A5C o similar)
+- Color Secundario / CTA: Naranja corporativo (#F97316 o similar)
+- Texto Principal: #0F172A
+- Texto Secundario: #64748B
+- Fondo Claro: #F8FAFC
+- Fondo Tarjetas: #FFFFFF
+- Hover Primario: versión más oscura del verde
+- Hover CTA: versión más oscura del naranja
+
+---------------------------------------------------
+
+ESTRUCTURA DE LA SUBPÁGINA:
+
+HEADER:
+Mantener navegación existente.
+Botón CTA: “Cotizar Desratización”
+
+---------------------------------------------------
+
+SECCIÓN HERO ESPECÍFICA:
+
+Título principal:
+"Servicio Profesional de Desratización en Santiago y Todo Chile"
+
+Subtítulo:
+Eliminamos ratas y roedores con métodos certificados, seguros y efectivos para hogares, empresas e industrias.
+
+Bullets debajo del subtítulo:
+✔ Resolución Sanitaria al día  
+✔ Técnicos certificados  
+✔ Atención rápida  
+✔ Cobertura nacional  
+
+Botones:
+- CTA Primario: “Solicitar Cotización”
+- CTA Secundario: “Llamar Ahora”
+
+Imagen de fondo:
+Técnico realizando control de plagas en entorno industrial (Unsplash - pest control technician)
+
+Formulario lateral (como en la página principal):
+- Tipo de propiedad (Casa, Empresa, Industria)
+- Nivel de infestación
+- Email
+- Teléfono
+- Botón: “Solicitar Evaluación”
+
+---------------------------------------------------
+
+SECCIÓN: ¿POR QUÉ ES IMPORTANTE LA DESRATIZACIÓN?
+
+Texto explicativo sobre:
+- Riesgos sanitarios
+- Daños estructurales
+- Contaminación de alimentos
+- Multas sanitarias para empresas
+
+Diseño en 2 columnas con iconos ilustrativos.
+
+---------------------------------------------------
+
+SECCIÓN: NUESTRO PROCESO DE DESRATIZACIÓN
+
+4 pasos en tarjetas horizontales:
+
+1. Inspección técnica
+2. Diagnóstico y plan de acción
+3. Instalación de estaciones de cebado seguras
+4. Seguimiento y control preventivo
+
+Cada tarjeta con ícono, título y breve descripción.
+
+---------------------------------------------------
+
+SECCIÓN: SOLUCIONES PARA
+
+Grid de 3 tarjetas:
+
+- Desratización para Empresas
+- Desratización para Hogares
+- Desratización Industrial
+
+Cada una con breve descripción y botón “Cotizar Servicio”
+
+---------------------------------------------------
+
+SECCIÓN DE TESTIMONIOS
+
+3 tarjetas con:
+- Nombre
+- Empresa o tipo de cliente
+- Comentario positivo
+- Imagen relacionada de Unsplash (clientes satisfechos, industria, oficina)
+
+---------------------------------------------------
+
+SECCIÓN DE COBERTURA
+
+Título:
+“Cobertura en Santiago y Todo Chile”
+
+Texto:
+Atendemos Región Metropolitana y principales ciudades del país con tiempos de respuesta rápidos.
+
+Incluir lista destacada:
+- Santiago
+- Valparaíso
+- Concepción
+- Antofagasta
+- Temuco
+- Cobertura Nacional
+
+---------------------------------------------------
+
+SECCIÓN DE CONTACTO FINAL (CTA FUERTE)
+
+Bloque oscuro con alto contraste.
+
+Título:
+“¿Problemas con roedores? Actúa hoy.”
+
+Botón grande naranja:
+“Solicitar Desratización Ahora”
+
+Botón secundario:
+WhatsApp directo
+
+Click-to-call en número telefónico.
+
+---------------------------------------------------
+
+FOOTER:
+
+- Dirección (Santiago, Chile)
+- Teléfono
+- WhatsApp
+- Correo
+- Horarios
+- Links rápidos
+- Redes sociales
+- Nota legal y cumplimiento SEREMI
+
+---------------------------------------------------
+
+SEO:
+
+- Title: Desratización Profesional en Santiago | Andes Plagas
+- Meta Description optimizada con palabras clave:
+  desratización en Santiago, control de ratas, control de roedores, empresa certificada en Chile
+- Estructura con H1 único
+- Schema markup LocalBusiness
+- URLs amigables
+
+---------------------------------------------------
+
+FUNCIONALIDADES ADICIONALES:
+
+- Integración botón flotante WhatsApp
+- Formularios con validación básica
+- Animaciones suaves en scroll
+- Diseño mobile-first
+- Lazy loading en imágenes
+- Componentes reutilizables
+- Optimización de carga
+
+---------------------------------------------------
+
+PRINCIPIOS DE DISEÑO:
+
+- Tipografía moderna sans-serif (Inter)
+- Grid de 12 columnas
+- Espaciado mínimo 24px
+- Alto contraste accesible
+- Navegación keyboard-friendly
+- Diseño profesional, técnico y confiable
+- Sensación de autoridad sanitaria y seguridad

@@ -64,7 +64,9 @@ export default function Navbar() {
               Servicios <ChevronDown className="w-4 h-4" />
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-white">
-              <DropdownMenuItem>Desratización</DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link href="/servicios/desratizacion" className="w-full cursor-pointer">Desratización</Link>
+              </DropdownMenuItem>
               <DropdownMenuItem>Desinsectación</DropdownMenuItem>
               <DropdownMenuItem>Sanitización</DropdownMenuItem>
             </DropdownMenuContent>
