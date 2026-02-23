@@ -295,7 +295,7 @@ export default function Desinsectacion() {
           </div>
           <p className="text-[#0F172A] font-black text-xs uppercase tracking-[0.5em] opacity-30">Nota legal: Servicio certificado con resolución sanitaria vigente</p>
         </div>
-      </header>
+      </footer>
     </div>
   );
 }
