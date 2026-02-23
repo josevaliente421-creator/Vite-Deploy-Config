@@ -1,0 +1,219 @@
+Crea una landing page ultra optimizada para campañas pagadas (Google Ads y Meta Ads) para el servicio de DESINFECCIÓN PROFESIONAL de Andes Plagas.
+
+La página debe estar enfocada 100% en conversión directa. No debe parecer una web corporativa tradicional.
+
+Eliminar distracciones, maximizar formularios enviados y llamadas.
+
+Desarrollar en React con componentes funcionales y hooks, usando Tailwind CSS. Enfoque mobile-first, velocidad extrema y optimización de conversión.
+
+---------------------------------------------------
+
+OBJETIVO PRINCIPAL:
+
+Generar:
+- Cotizaciones inmediatas
+- Llamadas telefónicas
+- Contactos por WhatsApp
+
+Reducir fricción y aumentar tasa de conversión.
+
+---------------------------------------------------
+
+ESTRUCTURA GENERAL:
+
+1. Header mínimo
+2. Hero potente con formulario visible
+3. Problema / urgencia
+4. Servicios claros
+5. Beneficios diferenciadores
+6. Prueba social
+7. Proceso simple
+8. CTA final fuerte
+9. Footer simplificado
+
+---------------------------------------------------
+
+HEADER SIMPLIFICADO:
+
+- Logo Andes Plagas
+- Teléfono grande con click-to-call
+- Botón naranja destacado: “Llamar Ahora”
+
+NO incluir menú de navegación.
+
+---------------------------------------------------
+
+HERO SECTION (Above the Fold – CRÍTICO PARA ADS):
+
+H1:
+“Desinfección Profesional en Santiago con Atención Inmediata”
+
+Subtítulo:
+Eliminamos virus, bacterias y agentes contaminantes con protocolos certificados y respuesta rápida.
+
+Bullets de impacto:
+
+✔ Atención rápida en Santiago  
+✔ Productos certificados  
+✔ Servicio para empresas y hogares  
+✔ Certificado de desinfección incluido  
+✔ Cobertura nacional  
+
+CTA principal grande (naranja):
+“Solicitar Desinfección Ahora”
+
+CTA secundario:
+“Hablar por WhatsApp”
+
+Formulario visible sin scroll:
+
+Campos mínimos:
+- Tipo de espacio (Oficina / Restaurante / Industria / Hogar)
+- Metros aproximados
+- Teléfono
+
+Botón grande:
+“Recibir Cotización en 15 Minutos”
+
+Texto pequeño debajo:
+“Respuesta rápida. Sin compromiso.”
+
+---------------------------------------------------
+
+SECCIÓN: ¿TIENES RIESGO SANITARIO?
+
+Título:
+“Actúa antes de que el problema crezca”
+
+Lista clara orientada a dolor:
+
+- Brotes o contagios recientes
+- Fiscalizaciones sanitarias
+- Reapertura de espacios
+- Protección de trabajadores y clientes
+- Prevención obligatoria en empresas
+
+Mensaje fuerte:
+“La prevención evita multas, cierres y riesgos innecesarios.”
+
+CTA intermedio:
+“Solicitar Evaluación Inmediata”
+
+---------------------------------------------------
+
+SECCIÓN: NUESTRO SERVICIO DE DESINFECCIÓN
+
+Explicar brevemente:
+
+- Aplicación con equipos profesionales (nebulización / pulverización)
+- Uso de productos autorizados
+- Técnicos capacitados
+- Entrega de certificado
+
+Diseño en 4 tarjetas claras con íconos.
+
+---------------------------------------------------
+
+SECCIÓN: ¿POR QUÉ ELEGIR ANDES PLAGAS?
+
+Bloque de autoridad:
+
+- Técnicos certificados
+- Protocolos aprobados por normativa sanitaria
+- Atención rápida en Santiago
+- Cobertura en todo Chile
+- Seguimiento profesional
+
+Mensaje de confianza:
+“Servicio seguro, rápido y efectivo.”
+
+---------------------------------------------------
+
+SECCIÓN DE TESTIMONIOS
+
+3 testimonios enfocados en:
+
+- Empresa
+- Restaurante
+- Oficina
+
+Resaltar:
+Rapidez, profesionalismo y cumplimiento sanitario.
+
+---------------------------------------------------
+
+SECCIÓN CTA FINAL (ALTA CONVERSIÓN):
+
+Bloque fondo oscuro.
+
+Título grande:
+“Protege tu espacio hoy mismo”
+
+Subtexto:
+Agenda tu desinfección profesional con atención inmediata.
+
+Botón naranja grande:
+“Solicitar Desinfección Ahora”
+
+Botón secundario:
+WhatsApp Directo
+
+Teléfono visible grande con click-to-call.
+
+---------------------------------------------------
+
+FOOTER SIMPLE:
+
+- Andes Plagas
+- Santiago, Chile
+- Teléfono
+- WhatsApp
+- Correo
+- Horarios
+- Nota legal sanitaria
+
+---------------------------------------------------
+
+PALETA DE COLORES:
+
+- Verde corporativo (#1F7A5C)
+- Naranja CTA (#F97316)
+- Texto principal: #0F172A
+- Fondo claro: #F8FAFC
+- Secciones clave con fondo oscuro para contraste
+
+---------------------------------------------------
+
+SEO Y CALIDAD PARA ADS:
+
+Title:
+Desinfección Profesional en Santiago | Andes Plagas
+
+Meta Description:
+Servicio profesional de desinfección en Santiago con atención inmediata. Protocolos certificados y cobertura nacional.
+
+Optimizar para keywords:
+
+- desinfección en Santiago
+- empresa de desinfección
+- desinfección profesional certificada
+- servicio de desinfección urgente
+
+Carga rápida.
+Optimización para Quality Score.
+H1 único.
+Schema LocalBusiness.
+
+---------------------------------------------------
+
+OPTIMIZACIÓN DE CONVERSIÓN:
+
+- CTA cada 1–2 bloques
+- Formularios cortos
+- Enfoque en urgencia
+- Eliminación de navegación innecesaria
+- Botón flotante WhatsApp
+- Diseño 100% mobile-first
+- Componentes reutilizables
+- Validación simple en formulario
+- Scroll suave con animaciones ligeras
