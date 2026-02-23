@@ -6,6 +6,7 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import Desratizacion from "@/pages/desratizacion";
 import Sanitizacion from "@/pages/sanitizacion";
+import Desinsectacion from "@/pages/desinsectacion";
 
 function Router() {
   return (
@@ -13,6 +14,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/servicios/desratizacion" component={Desratizacion} />
       <Route path="/servicios/sanitizacion" component={Sanitizacion} />
+      <Route path="/servicios/desinsectacion" component={Desinsectacion} />
       <Route component={NotFound} />
     </Switch>
   );
