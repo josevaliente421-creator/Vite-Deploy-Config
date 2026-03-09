@@ -36,8 +36,8 @@ export default function Desinsectacion() {
             <span className="text-2xl font-black text-[#0F172A] tracking-tighter">ANDES<span className="text-[#1F7A5C]">PLAGAS</span></span>
           </div>
           <div className="flex items-center gap-4">
-            <a href="tel:+56912345678" className="hidden md:flex items-center gap-2 text-[#0F172A] font-bold text-lg hover:text-[#1F7A5C] transition-colors">
-              <Phone className="w-5 h-5 text-[#F97316]" /> +56 9 1234 5678
+            <a href="tel:+56942713144" className="hidden md:flex items-center gap-2 text-[#0F172A] font-bold text-lg hover:text-[#1F7A5C] transition-colors">
+              <Phone className="w-5 h-5 text-[#F97316]" /> +56 9 4271 3144
             </a>
             <Button className="bg-[#F97316] hover:bg-[#EA580C] text-white font-bold px-6 py-6 rounded-xl shadow-lg shadow-orange-500/20 cursor-pointer">
               Llamar Ahora
@@ -274,8 +274,8 @@ export default function Desinsectacion() {
           </div>
           <div className="flex flex-col items-center gap-4">
             <p className="text-gray-500 font-black uppercase tracking-[0.3em] text-sm">Llamada de urgencia 24/7</p>
-            <a href="tel:+56912345678" className="flex items-center gap-4 text-4xl md:text-6xl font-black hover:text-[#F97316] transition-colors tracking-tighter">
-              <PhoneCall className="text-[#F97316] w-12 h-12 md:w-16 md:h-16" /> +56 9 1234 5678
+            <a href="tel:+56942713144" className="flex items-center gap-4 text-4xl md:text-6xl font-black hover:text-[#F97316] transition-colors tracking-tighter">
+              <PhoneCall className="text-[#F97316] w-12 h-12 md:w-16 md:h-16" /> +56 9 4271 3144
             </a>
           </div>
         </div>

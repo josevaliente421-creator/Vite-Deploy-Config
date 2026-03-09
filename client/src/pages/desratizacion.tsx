@@ -254,9 +254,9 @@ export default function Desratizacion() {
       {/* Coverage Section */}
       <section className="py-24 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-8 font-display uppercase tracking-tight">Cobertura en Santiago y Todo Chile</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-8 font-display uppercase tracking-tight">Cobertura en Todo Chile</h2>
           <p className="text-[#64748B] max-w-2xl mx-auto mb-16 text-lg font-medium">
-            Atendemos la Región Metropolitana y las principales ciudades del país con tiempos de respuesta líderes en la industria.
+            Atendemos las principales ciudades del país con tiempos de respuesta líderes en la industria.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
             {["Santiago", "Valparaíso", "Concepción", "Antofagasta", "Temuco", "Cobertura Nacional"].map((city) => (
@@ -288,7 +288,7 @@ export default function Desratizacion() {
           </div>
           <div className="mt-14 flex items-center justify-center gap-4 text-2xl md:text-3xl font-bold">
             <PhoneCall className="text-[#E8762E] w-8 h-8" />
-            <a href="tel:+56912345678" className="hover:text-[#E8762E] transition-colors tracking-tight">+56 9 1234 5678</a>
+            <a href="tel:+56942713144" className="hover:text-[#E8762E] transition-colors tracking-tight">+56 9 4271 3144</a>
           </div>
         </div>
       </section>

@@ -27,7 +27,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
-              Líderes en sanidad ambiental en la Región Metropolitana. Protegemos lo que más importa con tecnología y profesionalismo.
+              Líderes en sanidad ambiental. Protegemos lo que más importa con tecnología y profesionalismo.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 rounded-full bg-[hsl(168,64%,44%)]/10 hover:bg-[hsl(168,64%,44%)] flex items-center justify-center transition-all text-[hsl(168,64%,44%)] hover:text-white border border-[hsl(168,64%,44%)]/20">
@@ -45,33 +45,33 @@ export default function Footer() {
           {/* SEO / Locations Column */}
           <div className="lg:col-span-2">
             <h3 className="text-lg font-bold font-display mb-6 border-b border-[hsl(168,64%,44%)]/30 inline-block pb-2">
-              Cobertura en Región Metropolitana
+              Cobertura Nacional
             </h3>
             <div className="grid grid-cols-2 gap-x-8 gap-y-3 text-sm text-gray-300">
-              <a href="#" className="hover:text-[hsl(168,64%,44%)] transition-colors flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Santiago Centro
-              </a>
-              <a href="#" className="hover:text-[hsl(168,64%,44%)] transition-colors flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Providencia
-              </a>
-              <a href="#" className="hover:text-[hsl(168,64%,44%)] transition-colors flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Las Condes
-              </a>
-              <a href="#" className="hover:text-[hsl(168,64%,44%)] transition-colors flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Vitacura
-              </a>
-              <a href="#" className="hover:text-[hsl(168,64%,44%)] transition-colors flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Melipilla
-              </a>
-              <a href="#" className="hover:text-[hsl(168,64%,44%)] transition-colors flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Maipú
-              </a>
-              <a href="#" className="hover:text-[hsl(168,64%,44%)] transition-colors flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Ñuñoa
-              </a>
-              <a href="#" className="hover:text-[hsl(168,64%,44%)] transition-colors flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> La Florida
-              </a>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Región Metropolitana
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Valparaíso
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Concepción
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Antofagasta
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> La Serena
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Temuco
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Puerto Montt
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Todo Chile
+              </div>
             </div>
           </div>
 
@@ -82,11 +82,11 @@ export default function Footer() {
             </h3>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+56912345678" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
+                <a href="tel:+56942713144" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
                   <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[hsl(168,64%,44%)] transition-colors">
                     <Phone className="w-5 h-5" />
                   </div>
-                  <span className="font-semibold">+56 9 1234 5678</span>
+                  <span className="font-semibold">+56 9 4271 3144</span>
                 </a>
               </li>
               <li>
