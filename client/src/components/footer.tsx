@@ -42,39 +42,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* SEO / Locations Column */}
-          <div className="lg:col-span-2">
-            <h3 className="text-lg font-bold font-display mb-6 border-b border-[hsl(168,64%,44%)]/30 inline-block pb-2">
-              Cobertura Nacional
-            </h3>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-3 text-sm text-gray-300">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Región Metropolitana
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Valparaíso
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Concepción
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Antofagasta
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> La Serena
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Temuco
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Puerto Montt
-              </div>
-              <div className="flex items-center gap-2">
-                <MapPin className="w-3 h-3 text-[hsl(168,64%,44%)]" /> Todo Chile
-              </div>
-            </div>
-          </div>
-
           {/* Contact Column */}
           <div>
             <h3 className="text-lg font-bold font-display mb-6 border-b border-[hsl(168,64%,44%)]/30 inline-block pb-2">

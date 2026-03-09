@@ -251,24 +251,6 @@ export default function Desratizacion() {
         </div>
       </section>
 
-      {/* Coverage Section */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-8 font-display uppercase tracking-tight">Cobertura en Todo Chile</h2>
-          <p className="text-[#64748B] max-w-2xl mx-auto mb-16 text-lg font-medium">
-            Atendemos las principales ciudades del país con tiempos de respuesta líderes en la industria.
-          </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            {["Santiago", "Valparaíso", "Concepción", "Antofagasta", "Temuco", "Cobertura Nacional"].map((city) => (
-              <div key={city} className="flex items-center gap-3 bg-[#F8FAFC] px-8 py-5 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
-                <MapPin className="text-[#26B89A] w-5 h-5" />
-                <span className="font-bold text-[#0F172A] text-lg">{city}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Final CTA */}
       <section className="py-24 bg-[#0F172A] text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#26B89A]/5 blur-3xl rounded-full"></div>
