@@ -24,6 +24,13 @@ export default function Desinsectacion() {
     },
   });
 
+  const scrollToForm = () => {
+    const formElement = document.getElementById("quote-form");
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
       {/* Header Simplificado */}
@@ -81,7 +88,7 @@ export default function Desinsectacion() {
                 ))}
               </div>
               <div className="flex flex-col sm:flex-row gap-6 pt-4">
-                <Button size="lg" className="bg-[#F97316] hover:bg-[#EA580C] text-white font-black h-20 px-10 rounded-2xl text-xl shadow-2xl shadow-orange-500/30 transition-all cursor-pointer uppercase">
+                <Button onClick={scrollToForm} size="lg" className="bg-[#F97316] hover:bg-[#EA580C] text-white font-black h-20 px-10 rounded-2xl text-xl shadow-2xl shadow-orange-500/30 transition-all cursor-pointer uppercase">
                   Solicitar Desinfección Ahora
                 </Button>
                 <Button size="lg" variant="outline" className="border-2 border-white/20 text-white hover:bg-white hover:text-[#0F172A] font-bold h-20 px-10 rounded-2xl text-xl backdrop-blur-md transition-all cursor-pointer">
@@ -90,7 +97,7 @@ export default function Desinsectacion() {
               </div>
             </div>
 
-            <div className="w-full max-w-md mx-auto lg:ml-auto">
+            <div id="quote-form" className="w-full max-w-md mx-auto lg:ml-auto">
               <Card className="shadow-[0_20px_50px_rgba(0,0,0,0.5)] border-0 bg-white p-2 rounded-[2rem]">
                 <div className="bg-[#F8FAFC] p-8 rounded-[1.5rem]">
                   <CardHeader className="px-0 pt-0 text-center">
@@ -167,7 +174,7 @@ export default function Desinsectacion() {
 
           <div className="mt-16 text-center">
             <p className="text-2xl font-black text-[#0F172A] mb-8 uppercase tracking-tighter">“La prevención evita multas, cierres y riesgos innecesarios.”</p>
-            <Button size="lg" className="bg-[#1F7A5C] hover:bg-[#165a44] text-white font-black h-18 px-12 rounded-2xl text-xl shadow-2xl shadow-[#1F7A5C]/20 transition-all cursor-pointer uppercase">
+            <Button onClick={scrollToForm} size="lg" className="bg-[#1F7A5C] hover:bg-[#165a44] text-white font-black h-18 px-12 rounded-2xl text-xl shadow-2xl shadow-[#1F7A5C]/20 transition-all cursor-pointer uppercase">
               Solicitar Evaluación Inmediata
             </Button>
           </div>
@@ -265,7 +272,7 @@ export default function Desinsectacion() {
             Agenda tu desinfección profesional con atención inmediata. <br className="hidden md:block"/> Resultados garantizados y certificados.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-16">
-            <Button size="lg" className="bg-[#F97316] hover:bg-[#EA580C] text-white font-black h-24 px-16 rounded-[2rem] text-2xl shadow-2xl shadow-orange-500/30 transition-all cursor-pointer uppercase tracking-tighter">
+            <Button onClick={scrollToForm} size="lg" className="bg-[#F97316] hover:bg-[#EA580C] text-white font-black h-24 px-16 rounded-[2rem] text-2xl shadow-2xl shadow-orange-500/30 transition-all cursor-pointer uppercase tracking-tighter">
               Solicitar Desinfección Ahora
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-[#1F7A5C] text-[#1F7A5C] hover:bg-[#1F7A5C] hover:text-white font-black h-24 px-16 rounded-[2rem] text-2xl transition-all cursor-pointer uppercase tracking-tighter">

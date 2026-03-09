@@ -29,6 +29,13 @@ export default function Desratizacion() {
     },
   });
 
+  const scrollToForm = () => {
+    const formElement = document.getElementById("quote-form");
+    if (formElement) {
+      formElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#F8FAFC]">
       <Navbar />
@@ -60,14 +67,14 @@ export default function Desratizacion() {
                 <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5" /> <span>Cobertura nacional</span></div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                <Button size="lg" className="bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 px-8 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all cursor-pointer">Solicitar Cotización</Button>
+                <Button onClick={scrollToForm} size="lg" className="bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 px-8 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all cursor-pointer">Solicitar Cotización</Button>
                 <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#0F172A] font-bold h-14 px-8 rounded-lg transition-all cursor-pointer">
                   <Phone className="mr-2 w-5 h-5" /> Llamar Ahora
                 </Button>
               </div>
             </div>
 
-            <div className="w-full max-w-md mx-auto lg:ml-auto">
+            <div id="quote-form" className="w-full max-w-md mx-auto lg:ml-auto">
               <Card className="shadow-2xl border-0 bg-white/95 backdrop-blur-sm">
                 <div className="h-2 w-full bg-[#E8762E]"></div>
                 <CardHeader>
@@ -210,7 +217,7 @@ export default function Desratizacion() {
                 <CardContent className="p-8 flex flex-col flex-grow">
                   <h3 className="text-2xl font-bold mb-4 text-[#0F172A]">Desratización para {sol.title}</h3>
                   <p className="text-[#64748B] mb-8 leading-relaxed flex-grow">{sol.desc}</p>
-                  <Button variant="outline" className="w-full border-[#26B89A] text-[#26B89A] hover:bg-[#26B89A] hover:text-white font-bold h-12 rounded-lg transition-all cursor-pointer">Cotizar Servicio</Button>
+                  <Button onClick={scrollToForm} variant="outline" className="w-full border-[#26B89A] text-[#26B89A] hover:bg-[#26B89A] hover:text-white font-bold h-12 rounded-lg transition-all cursor-pointer">Cotizar Servicio</Button>
                 </CardContent>
               </Card>
             ))}
@@ -261,7 +268,7 @@ export default function Desratizacion() {
             No permitas que una plaga ponga en riesgo tu salud, la de tu familia o la reputación de tu negocio. Evaluación profesional inmediata y garantizada.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <Button size="lg" className="bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-18 px-12 rounded-xl text-xl shadow-2xl shadow-orange-500/20 transition-all cursor-pointer">
+            <Button onClick={scrollToForm} size="lg" className="bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-18 px-12 rounded-xl text-xl shadow-2xl shadow-orange-500/20 transition-all cursor-pointer">
               Solicitar Desratización Ahora
             </Button>
             <Button size="lg" variant="outline" className="border-2 border-[#26B89A] text-[#26B89A] hover:bg-[#26B89A] hover:text-white font-bold h-18 px-12 rounded-xl text-xl transition-all cursor-pointer">
