@@ -86,7 +86,7 @@ export default function Services() {
               
               <CardFooter className="pt-0 mt-auto">
                 {service.slug ? (
-                  <Link href={service.slug} className="w-full">
+                  <Link href={service.slug} className="w-full" onClick={() => window.scrollTo(0, 0)}>
                     <Button variant="outline" className="w-full border-[hsl(168,64%,44%)] text-[hsl(168,64%,44%)] hover:bg-[hsl(168,64%,44%)] hover:text-white font-semibold group-hover:bg-[hsl(168,64%,44%)] group-hover:text-white transition-all cursor-pointer">
                       Más Información
                     </Button>

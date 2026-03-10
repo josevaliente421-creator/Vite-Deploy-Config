@@ -68,9 +68,11 @@ export default function Desratizacion() {
               </div>
               <div className="flex flex-col sm:flex-row gap-4 pt-6">
                 <Button onClick={scrollToForm} size="lg" className="bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 px-8 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all cursor-pointer">Solicitar Cotización</Button>
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-[#0F172A] font-bold h-14 px-8 rounded-lg transition-all cursor-pointer">
-                  <Phone className="mr-2 w-5 h-5" /> Llamar Ahora
-                </Button>
+                <a href="tel:+56942713144" className="w-full">
+                  <Button size="lg" variant="outline" className="w-full border-2 border-white text-white hover:bg-white hover:text-[#0F172A] font-bold h-14 px-8 rounded-lg transition-all cursor-pointer">
+                    <Phone className="mr-2 w-5 h-5" /> Llamar Ahora
+                  </Button>
+                </a>
               </div>
             </div>
 

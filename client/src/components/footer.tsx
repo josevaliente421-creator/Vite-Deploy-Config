@@ -65,9 +65,11 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
-            <Button className="w-full mt-6 bg-[hsl(23,79%,55%)] hover:bg-[hsl(23,79%,45%)] text-white font-bold rounded-full">
-              Solicitar Visita Técnica
-            </Button>
+            <a href="#contacto" className="w-full mt-6">
+              <Button className="w-full bg-[hsl(23,79%,55%)] hover:bg-[hsl(23,79%,45%)] text-white font-bold rounded-full cursor-pointer">
+                Solicitar Visita Técnica
+              </Button>
+            </a>
           </div>
         </div>
 
