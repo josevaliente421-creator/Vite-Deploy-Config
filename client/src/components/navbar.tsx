@@ -65,13 +65,13 @@ export default function Navbar() {
             </DropdownMenuTrigger>
             <DropdownMenuContent className="bg-white">
               <DropdownMenuItem>
-                <Link href="/servicios/desratizacion" className="w-full cursor-pointer">Desratización</Link>
+                <Link href="/desratizacion" className="w-full cursor-pointer">Desratización</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/servicios/desinsectacion" className="w-full cursor-pointer">Desinsectación</Link>
+                <Link href="/desinsectacion" className="w-full cursor-pointer">Desinsectación</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link href="/servicios/sanitizacion" className="w-full cursor-pointer">Sanitización</Link>
+                <Link href="/sanitizacion" className="w-full cursor-pointer">Sanitización</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -114,9 +114,9 @@ export default function Navbar() {
           <div className="p-2">
             <span className="text-sm font-medium block mb-2">Servicios</span>
             <div className="pl-4 flex flex-col gap-2 border-l-2 border-[hsl(168,64%,44%)]">
-              <Link href="/servicios/desratizacion" className="text-sm text-gray-600 cursor-pointer">Desratización</Link>
-              <Link href="/servicios/desinsectacion" className="text-sm text-gray-600 cursor-pointer">Desinsectación</Link>
-              <Link href="/servicios/sanitizacion" className="text-sm text-gray-600 cursor-pointer">Sanitización</Link>
+              <Link href="/desratizacion" className="text-sm text-gray-600 cursor-pointer">Desratización</Link>
+              <Link href="/desinsectacion" className="text-sm text-gray-600 cursor-pointer">Desinsectación</Link>
+              <Link href="/sanitizacion" className="text-sm text-gray-600 cursor-pointer">Sanitización</Link>
             </div>
           </div>
           <Link href="/certificaciones" className="text-sm font-medium p-2 hover:bg-gray-50 rounded cursor-pointer">

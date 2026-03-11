@@ -11,7 +11,7 @@ const services = [
     features: ["Soluciones para Empresas", "Control preventivo", "Certificado SEREMI"],
     image: "/service-1.png", // Using the generated image
     color: "hsl(168,64%,44%)",
-    slug: "/servicios/desratizacion"
+    slug: "/desratizacion"
   },
   {
     title: "Desinsectación",
@@ -20,7 +20,7 @@ const services = [
     features: ["Normativa SEREMI", "Reportes técnicos", "Calendario anual"],
     image: "https://images.unsplash.com/photo-1584650549422-497dfb5c1638?auto=format&fit=crop&q=80&w=800", // Stock placeholder
     color: "hsl(23,79%,55%)",
-    slug: "/servicios/desinsectacion"
+    slug: "/desinsectacion"
   },
   {
     title: "Sanitización",
@@ -29,7 +29,7 @@ const services = [
     features: ["Cumplimiento legal", "Resolución vigente", "Ambientes seguros"],
     image: "https://images.unsplash.com/photo-1584744982491-665216d95f8b?auto=format&fit=crop&q=80&w=800", // Stock placeholder
     color: "hsl(212,32%,16%)",
-    slug: "/servicios/sanitizacion"
+    slug: "/sanitizacion"
   }
 ];
 

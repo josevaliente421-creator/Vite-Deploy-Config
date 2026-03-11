@@ -12,9 +12,9 @@ function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/servicios/desratizacion" component={Desratizacion} />
-      <Route path="/servicios/sanitizacion" component={Sanitizacion} />
-      <Route path="/servicios/desinsectacion" component={Desinsectacion} />
+      <Route path="/desratizacion" component={Desratizacion} />
+      <Route path="/sanitizacion" component={Sanitizacion} />
+      <Route path="/desinsectacion" component={Desinsectacion} />
       <Route component={NotFound} />
     </Switch>
   );
