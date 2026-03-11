@@ -34,9 +34,11 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group cursor-pointer">
-            <div className="w-10 h-10 bg-[hsl(168,64%,44%)] rounded-lg flex items-center justify-center text-white font-bold text-xl group-hover:scale-105 transition-transform">
-              AP
-            </div>
+            <img 
+              src="https://i.ibb.co/LdvM85z/andes-plagas-logo.png" 
+              alt="Andes Plagas Logo" 
+              className="h-12 w-auto object-contain group-hover:scale-105 transition-transform"
+            />
             <div className="flex flex-col">
               <span className="font-bold text-[hsl(212,32%,16%)] leading-tight text-lg tracking-tight font-display">
                 ANDES PLAGAS
