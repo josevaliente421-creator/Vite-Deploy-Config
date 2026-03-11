@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { CheckCircle2, Phone, ShieldAlert, Zap, Search, Target, LayoutDashboard, History, MessageSquare, MapPin, PhoneCall } from "lucide-react";
 import TrustBar from "@/components/trust-bar";
+import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
   propiedad: z.string().min(1, "Seleccione tipo de propiedad"),
@@ -19,6 +21,8 @@ const formSchema = z.object({
 });
 
 export default function Desratizacion() {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -28,6 +32,44 @@ export default function Desratizacion() {
       telefono: "",
     },
   });
+
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("https://hook.us2.make.com/koajghs02g7rrr1dn5agxgxqvxbn74lt", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          servicio: "Desratización",
+          propiedad: values.propiedad,
+          infestacion: values.infestacion,
+          email: values.email,
+          telefono: values.telefono,
+          origen: "Página Desratización"
+        }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "¡Solicitud enviada!",
+          description: "Nos contactaremos contigo a la brevedad.",
+        });
+        form.reset();
+      } else {
+        throw new Error("Error en el envío");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Hubo un problema al enviar tu solicitud. Intenta nuevamente.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
 
   const scrollToForm = () => {
     const formElement = document.getElementById("quote-form");
@@ -85,7 +127,7 @@ export default function Desratizacion() {
                 </CardHeader>
                 <CardContent>
                   <Form {...form}>
-                    <form className="space-y-4">
+                    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
                       <FormField control={form.control} name="propiedad" render={({ field }) => (
                         <FormItem>
                           <FormLabel className="font-semibold text-gray-700">Tipo de Propiedad</FormLabel>
@@ -124,8 +166,8 @@ export default function Desratizacion() {
                           <FormControl><Input placeholder="+56 9..." {...field} className="bg-white h-12 border-gray-200" /></FormControl>
                         </FormItem>
                       )} />
-                      <Button className="w-full bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all mt-4 cursor-pointer">
-                        SOLICITAR EVALUACIÓN
+                      <Button type="submit" disabled={isSubmitting} className="w-full bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all mt-4 cursor-pointer">
+                        {isSubmitting ? "ENVIANDO..." : "SOLICITAR EVALUACIÓN"}
                       </Button>
                     </form>
                   </Form>

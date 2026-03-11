@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
@@ -7,6 +8,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useToast } from "@/hooks/use-toast";
 
 const formSchema = z.object({
   plaga: z.string().min(1, "Seleccione un tipo de plaga"),
@@ -15,6 +17,8 @@ const formSchema = z.object({
 });
 
 export default function Hero() {
+  const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -24,8 +28,40 @@ export default function Hero() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("https://hook.us2.make.com/koajghs02g7rrr1dn5agxgxqvxbn74lt", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          servicio: values.plaga,
+          email: values.email,
+          telefono: values.contacto,
+          origen: "Hero Form"
+        }),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "¡Solicitud enviada!",
+          description: "Nos contactaremos contigo a la brevedad.",
+        });
+        form.reset();
+      } else {
+        throw new Error("Error en el envío");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Hubo un problema al enviar tu solicitud. Intenta nuevamente.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -144,9 +180,10 @@ export default function Hero() {
 
                     <Button 
                       type="submit" 
+                      disabled={isSubmitting}
                       className="w-full bg-[hsl(23,79%,55%)] hover:bg-[hsl(23,79%,45%)] text-white font-bold text-lg h-14 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all mt-2"
                     >
-                      SOLICITAR COTIZACIÓN
+                      {isSubmitting ? "ENVIANDO..." : "SOLICITAR COTIZACIÓN"}
                     </Button>
                     
                     <p className="text-xs text-center text-gray-400 mt-4">
