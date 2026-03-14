@@ -54,13 +54,7 @@ export default function Navbar() {
           <Link href="/" className="text-sm font-medium text-[hsl(212,32%,16%)] hover:text-[hsl(168,64%,44%)] transition-colors cursor-pointer">
             Inicio
           </Link>
-          <Link href="/empresas" className="text-sm font-medium text-[hsl(212,32%,16%)] hover:text-[hsl(168,64%,44%)] transition-colors cursor-pointer">
-            Empresas
-          </Link>
-          <Link href="/hogar" className="text-sm font-medium text-[hsl(212,32%,16%)] hover:text-[hsl(168,64%,44%)] transition-colors cursor-pointer">
-            Hogar
-          </Link>
-
+          
           <DropdownMenu>
             <DropdownMenuTrigger className="flex items-center gap-1 text-sm font-medium text-[hsl(212,32%,16%)] hover:text-[hsl(168,64%,44%)] transition-colors outline-none cursor-pointer">
               Servicios <ChevronDown className="w-4 h-4" />
@@ -106,12 +100,6 @@ export default function Navbar() {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-lg p-4 flex flex-col gap-4 animate-in slide-in-from-top-5">
           <Link href="/" className="text-sm font-medium p-2 hover:bg-gray-50 rounded cursor-pointer">
             Inicio
-          </Link>
-          <Link href="/empresas" className="text-sm font-medium p-2 hover:bg-gray-50 rounded cursor-pointer">
-            Empresas
-          </Link>
-          <Link href="/hogar" className="text-sm font-medium p-2 hover:bg-gray-50 rounded cursor-pointer">
-            Hogar
           </Link>
           <div className="p-2">
             <span className="text-sm font-medium block mb-2">Servicios</span>

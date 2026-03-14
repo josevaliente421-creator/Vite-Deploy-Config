@@ -278,7 +278,7 @@ export default function Desinsectacion() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { name: "Roberto García", role: "Dueño de Restaurante", text: "Eliminaron los insectos en una noche. Al día siguiente pudimos reabrir sin problemas. Excelente servicio.", img: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070&auto=format&fit=crop" },
-              { name: "Patricia Müller", role: "Administradora de Clínica", text: "Muy profesionales. El plan preventivo mensual nos da la seguridad de pasar cualquier fiscalización. Recomendados.", img: "/patricia-muller.jpg" },
+              { name: "Patricia Müller", role: "Administradora de Clínica", text: "Muy profesionales. El plan preventivo mensual nos da la seguridad de pasar cualquier fiscalización. Recomendados.", img: "/avatar-female-doc.svg" },
               { name: "Carlos Morales", role: "Gerente de Bodega", text: "Llevamos más de un año con su servicio. Sin plagas, sin problemas y cumpliendo con todas las normativas.", img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" }
             ].map((t, i) => (
               <Card key={i} className="p-0 border-0 shadow-xl overflow-hidden rounded-2xl flex flex-col bg-white">

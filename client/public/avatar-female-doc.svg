@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <rect width="400" height="400" fill="#f8fafc"/>
+  
+  <!-- Shoulders & Coat -->
+  <path d="M200 240c-65 0-120 45-135 105v55h270v-55c-15-60-70-105-135-105z" fill="#0f172a"/>
+  <path d="M150 240l50 110 50-110v160h-100z" fill="#ffffff"/>
+  
+  <!-- Stethoscope -->
+  <path d="M165 240v45c0 20 15 35 35 35s35-15 35-35v-45" fill="none" stroke="#94a3b8" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="200" cy="320" r="16" fill="#cbd5e1"/>
+  <circle cx="200" cy="320" r="10" fill="#94a3b8"/>
+  
+  <!-- Neck -->
+  <path d="M175 190h50v60h-50z" fill="#fed7aa"/>
+  
+  <!-- Hair (Back) -->
+  <path d="M130 150c0 40 10 90 30 110v20c0 10 10 15 20 10l20-10 20 10c10 5 20 0 20-10v-20c20-20 30-70 30-110z" fill="#334155"/>
+  
+  <!-- Head/Face -->
+  <circle cx="200" cy="150" r="55" fill="#fed7aa"/>
+  
+  <!-- Face details -->
+  <path d="M180 150q10-5 20 0" fill="none" stroke="#94a3b8" stroke-width="3" stroke-linecap="round" opacity="0.5"/>
+  
+  <!-- Hair (Front/Bangs) -->
+  <path d="M200 80c-45 0-75 30-80 75 15-20 40-30 80-30s65 10 80 30c-5-45-35-75-80-75z" fill="#334155"/>
+  <path d="M120 155c0-45 35-85 80-85s80 40 80 85c0 10-5 20-10 30-10-25-35-40-70-40s-60 15-70 40c-5-10-10-20-10-30z" fill="#1e293b"/>
+  
+  <!-- Glasses -->
+  <rect x="165" y="135" width="25" height="15" rx="5" fill="none" stroke="#0f172a" stroke-width="3"/>
+  <rect x="210" y="135" width="25" height="15" rx="5" fill="none" stroke="#0f172a" stroke-width="3"/>
+  <path d="M190 142h20" fill="none" stroke="#0f172a" stroke-width="3"/>
+</svg>
