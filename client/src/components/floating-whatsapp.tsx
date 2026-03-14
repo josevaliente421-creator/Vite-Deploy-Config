@@ -4,7 +4,7 @@ export default function FloatingWhatsApp() {
       href="https://wa.me/56942713144"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed bottom-[20px] right-[20px] z-[9999] w-[60px] h-[60px] bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full shadow-[0_4px_10px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_14px_rgba(0,0,0,0.4)] hover:scale-110 transition-all duration-300 flex items-center justify-center cursor-pointer"
+      className="fixed bottom-[20px] right-[20px] z-[9999] w-[60px] h-[60px] bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:scale-110 transition-all duration-300 flex items-center justify-center cursor-pointer"
       aria-label="Chat en WhatsApp"
     >
       <svg

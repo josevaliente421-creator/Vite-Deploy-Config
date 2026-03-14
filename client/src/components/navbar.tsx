@@ -22,6 +22,16 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const handleQuoteClick = () => {
+    const el = document.getElementById("quote-form-hero") || document.getElementById("quote-form");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    } else {
+      window.location.href = "/#quote-form-hero";
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <nav
       className={cn(
@@ -80,6 +90,7 @@ export default function Navbar() {
         {/* CTA Button */}
         <div className="hidden md:block">
           <Button 
+            onClick={handleQuoteClick}
             className="bg-[hsl(23,79%,55%)] hover:bg-[hsl(23,79%,45%)] text-white rounded-full px-6 font-bold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 cursor-pointer"
           >
             COTIZAR AHORA
@@ -112,7 +123,7 @@ export default function Navbar() {
           <Link href="/certificaciones" className="text-sm font-medium p-2 hover:bg-gray-50 rounded cursor-pointer">
             Certificaciones
           </Link>
-          <Button className="w-full bg-[hsl(23,79%,55%)] text-white rounded-full font-bold cursor-pointer">
+          <Button onClick={handleQuoteClick} className="w-full bg-[hsl(23,79%,55%)] text-white rounded-full font-bold cursor-pointer hover:bg-[hsl(23,79%,45%)]">
             COTIZAR AHORA
           </Button>
         </div>

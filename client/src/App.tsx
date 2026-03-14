@@ -7,6 +7,7 @@ import Home from "@/pages/home";
 import Desratizacion from "@/pages/desratizacion";
 import Sanitizacion from "@/pages/sanitizacion";
 import Desinsectacion from "@/pages/desinsectacion";
+import Certificaciones from "@/pages/certificaciones";
 import FloatingWhatsApp from "@/components/floating-whatsapp";
 
 function Router() {
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/desratizacion" component={Desratizacion} />
       <Route path="/sanitizacion" component={Sanitizacion} />
       <Route path="/desinsectacion" component={Desinsectacion} />
+      <Route path="/certificaciones" component={Certificaciones} />
       <Route component={NotFound} />
     </Switch>
   );
