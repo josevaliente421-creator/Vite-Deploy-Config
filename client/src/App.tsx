@@ -7,6 +7,7 @@ import Home from "@/pages/home";
 import Desratizacion from "@/pages/desratizacion";
 import Sanitizacion from "@/pages/sanitizacion";
 import Desinsectacion from "@/pages/desinsectacion";
+import FloatingWhatsApp from "@/components/floating-whatsapp";
 
 function Router() {
   return (
@@ -25,6 +26,7 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Toaster />
       <Router />
+      <FloatingWhatsApp />
     </QueryClientProvider>
   );
 }

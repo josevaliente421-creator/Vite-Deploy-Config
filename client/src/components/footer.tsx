@@ -14,9 +14,11 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-[hsl(168,64%,44%)] rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                AP
-              </div>
+              <img 
+                src="https://res.cloudinary.com/dojxjnqsg/image/upload/v1773520878/f3a3b2ff-3e00-4a9c-856c-a421cc227182.png" 
+                alt="Andes Plagas Logo" 
+                className="h-14 w-auto object-contain"
+              />
               <div className="flex flex-col">
                 <span className="font-bold text-white leading-tight text-lg tracking-tight font-display">
                   ANDES PLAGAS
