@@ -15,7 +15,7 @@ export default function Certificaciones() {
     <div className="min-h-screen bg-white flex flex-col">
       <Navbar />
       <main className="flex-1 pt-32 pb-20">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-5">
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-[hsl(212,32%,16%)] mb-6 font-display leading-tight">
               Certificaciones SEREMI y <span className="text-[#E8762E]">Resolución Sanitaria</span> en Santiago

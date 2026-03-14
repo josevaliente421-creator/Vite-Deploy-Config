@@ -20,7 +20,7 @@ export default function Home() {
         <Services />
         {/* Additional section for content if needed */}
         <section className="py-20 bg-[hsl(210,20%,96%)]">
-           <div className="container mx-auto px-4 text-center">
+           <div className="container mx-auto px-5 text-center">
              <h2 className="text-3xl font-bold text-[hsl(212,32%,16%)] mb-6 font-display">¿Por qué elegir Andes Plagas?</h2>
              <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100">

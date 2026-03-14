@@ -99,27 +99,27 @@ export default function Sanitizacion() {
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-transparent"></div>
         </div>
 
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-5 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 max-w-2xl text-white">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display leading-tight">
+              <h1 className="text-[2.25rem] sm:text-[2.5rem] leading-[1.1] md:text-5xl lg:text-6xl font-bold font-display text-balance">
                 Servicio Profesional de <span className="text-[#26B89A]">Sanitización</span> en Santiago y Todo Chile
               </h1>
               <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
                 Desinfección certificada para eliminar virus, bacterias y agentes contaminantes en espacios laborales y residenciales.
               </p>
-              <div className="grid grid-cols-2 gap-4 pt-4">
-                <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5" /> <span>Productos certificados</span></div>
-                <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5" /> <span>Técnicos especializados</span></div>
-                <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5" /> <span>Atención rápida</span></div>
-                <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5" /> <span>Cobertura nacional</span></div>
-                <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5" /> <span>Resolución sanitaria</span></div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5 shrink-0" /> <span>Productos certificados</span></div>
+                <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5 shrink-0" /> <span>Técnicos especializados</span></div>
+                <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5 shrink-0" /> <span>Atención rápida</span></div>
+                <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5 shrink-0" /> <span>Cobertura nacional</span></div>
+                <div className="flex items-center gap-2 font-medium"><CheckCircle2 className="text-[#26B89A] w-5 h-5 shrink-0" /> <span>Resolución sanitaria</span></div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-3 pt-6">
-                <Button onClick={scrollToForm} size="lg" className="flex-1 bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 px-8 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all cursor-pointer">
+              <div className="flex flex-col md:flex-row gap-3 pt-6 w-full">
+                <Button onClick={scrollToForm} size="lg" className="w-full md:flex-1 bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 px-8 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all cursor-pointer">
                   Solicitar Sanitización Ahora
                 </Button>
-                <a href="https://wa.me/56942713144" target="_blank" rel="noopener noreferrer" className="flex-1">
+                <a href="https://wa.me/56942713144" target="_blank" rel="noopener noreferrer" className="w-full md:flex-1">
                   <Button size="lg" variant="outline" className="w-full bg-[#25D366]/10 border-2 border-[#25D366] text-white hover:bg-[#25D366] hover:text-white font-bold h-14 px-8 rounded-lg transition-all cursor-pointer flex items-center justify-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 21.611l-3.324-.877-3.856.883.896-3.832-.888-3.356c1.196-4.52 5.568-7.551 10.155-7.551 5.761 0 10.428 4.646 10.428 10.377 0 5.73-4.667 10.377-10.428 10.377-1.077 0-2.126-.17-3.111-.476zm6.541-11.758c-1.282-1.272-2.986-1.975-4.802-1.975-3.738 0-6.779 3.023-6.779 6.742 0 1.189.313 2.353.906 3.385l-.963 3.518 3.652-.949c.995.539 2.112.822 3.262.822h.003c3.736 0 6.778-3.023 6.778-6.744 0-1.802-.705-3.493-1.993-4.773zm-4.793 10.25h-.002c-1.002 0-1.984-.267-2.842-.773l-.203-.119-2.116.55.565-2.046-.131-.208c-.556-.882-.849-1.9-.849-2.96 0-3.082 2.522-5.59 5.617-5.59 1.498 0 2.906.58 3.963 1.631a5.578 5.578 0 011.646 3.962c0 3.08-2.523 5.589-5.616 5.589zm3.085-4.18c-.169-.084-1.003-.492-1.158-.548-.155-.056-.268-.084-.381.084-.112.168-.436.548-.535.66-.098.112-.197.126-.366.042-.169-.084-.716-.261-1.365-.838-.505-.449-.846-1.004-.944-1.172-.099-.168-.01-.259.074-.343.076-.076.169-.196.253-.294.085-.098.113-.168.169-.28.056-.112.028-.21-.014-.294-.042-.084-.381-.91-.521-1.246-.136-.326-.275-.282-.381-.287-.098-.004-.21-.005-.324-.005-.112 0-.295.042-.45.21-.155.168-.591.574-.591 1.401 0 .827.605 1.626.69 1.738.084.112 1.196 1.808 2.898 2.502.405.165.722.264.969.338.407.128.778.11 1.07.067.327-.048 1.003-.406 1.144-.8.14-.393.14-.73.098-.8-.042-.07-.154-.112-.323-.196z"/></svg>
                     Hablar por WhatsApp
@@ -198,7 +198,7 @@ export default function Sanitizacion() {
 
       {/* When to sanitize */}
       <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-5">
           <div className="max-w-5xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-6 font-display uppercase tracking-tight">¿Cuándo necesitas Sanitizar?</h2>
             <p className="text-[#64748B] text-lg font-medium">La prevención evita multas, contagios y cierres.</p>
@@ -226,7 +226,7 @@ export default function Sanitizacion() {
 
       {/* Method Section */}
       <section className="py-24 bg-[#F8FAFC]">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-5 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-16 font-display uppercase tracking-tight">Nuestro Método Certificado</h2>
           <div className="grid md:grid-cols-4 gap-8 relative">
             {[
@@ -249,7 +249,7 @@ export default function Sanitizacion() {
 
       {/* Benefits Section */}
       <section className="py-24 bg-white">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-5">
           <div className="grid lg:grid-cols-2 gap-16 items-center max-w-6xl mx-auto">
             <div className="space-y-8">
               <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] font-display uppercase tracking-tight">Beneficios de una sanitización profesional</h2>
@@ -283,7 +283,7 @@ export default function Sanitizacion() {
 
       {/* Social Proof */}
       <section className="py-24 bg-[#F8FAFC]">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-5">
           <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] text-center mb-16 font-display uppercase tracking-tight">Empresas que confían en nosotros</h2>
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -310,7 +310,7 @@ export default function Sanitizacion() {
       <section className="py-24 bg-[#0F172A] text-white relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-[#26B89A]/5 blur-3xl rounded-full"></div>
         <div className="absolute bottom-0 left-0 w-1/4 h-full bg-[#E8762E]/5 blur-3xl rounded-full"></div>
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="container mx-auto px-5 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 font-display uppercase tracking-tight">Protege tu espacio <span className="text-[#E8762E]">hoy mismo</span></h2>
           <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
             Agenda tu sanitización profesional con atención inmediata. Garantizamos ambientes seguros y libres de contagios.

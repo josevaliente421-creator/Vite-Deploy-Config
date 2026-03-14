@@ -9,7 +9,7 @@ const logos = [
 export default function TrustBar() {
   return (
     <section className="bg-gray-50 py-10 border-b border-gray-100 overflow-hidden">
-      <div className="container mx-auto px-4 mb-8 text-center">
+      <div className="container mx-auto px-5 mb-8 text-center">
         <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest">
           Más de 500 empresas confían en nuestra gestión anual
         </p>

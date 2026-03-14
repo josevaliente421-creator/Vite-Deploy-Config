@@ -9,7 +9,7 @@ export default function Footer() {
         <Star className="w-96 h-96 text-white rotate-45 transform translate-x-1/3 translate-y-1/3" />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-5 relative z-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand Column */}
           <div className="space-y-6">
