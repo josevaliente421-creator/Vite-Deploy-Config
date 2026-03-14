@@ -86,7 +86,7 @@ export default function Desinsectacion() {
       <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1584650549422-497dfb5c1638?q=80&w=2070&auto=format&fit=crop"
+            src="/hero-desinsectacion.png"
             alt="Control de insectos profesional"
             className="w-full h-full object-cover"
           />
@@ -162,6 +162,15 @@ export default function Desinsectacion() {
                       <Button type="submit" disabled={isSubmitting} className="w-full bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all mt-4 cursor-pointer">
                         {isSubmitting ? "ENVIANDO..." : "SOLICITAR EVALUACIÓN"}
                       </Button>
+                      
+                      <a 
+                        href="https://wa.me/56942713144" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block text-center text-sm font-medium text-[#26B89A] hover:text-[#1e9980] hover:underline mt-4 transition-colors"
+                      >
+                        ¿Prefieres hablar por WhatsApp? Haz clic aquí
+                      </a>
                     </form>
                   </Form>
                 </CardContent>
@@ -269,7 +278,7 @@ export default function Desinsectacion() {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { name: "Roberto García", role: "Dueño de Restaurante", text: "Eliminaron los insectos en una noche. Al día siguiente pudimos reabrir sin problemas. Excelente servicio.", img: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=2070&auto=format&fit=crop" },
-              { name: "Patricia Müller", role: "Administradora de Clínica", text: "Muy profesionales. El plan preventivo mensual nos da la seguridad de pasar cualquier fiscalización. Recomendados.", img: "https://images.unsplash.com/photo-1581578731548-c64695cc6954?q=80&w=2070&auto=format&fit=crop" },
+              { name: "Patricia Müller", role: "Administradora de Clínica", text: "Muy profesionales. El plan preventivo mensual nos da la seguridad de pasar cualquier fiscalización. Recomendados.", img: "/patricia-muller.jpg" },
               { name: "Carlos Morales", role: "Gerente de Bodega", text: "Llevamos más de un año con su servicio. Sin plagas, sin problemas y cumpliendo con todas las normativas.", img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop" }
             ].map((t, i) => (
               <Card key={i} className="p-0 border-0 shadow-xl overflow-hidden rounded-2xl flex flex-col bg-white">

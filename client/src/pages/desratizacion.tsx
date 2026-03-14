@@ -169,6 +169,15 @@ export default function Desratizacion() {
                       <Button type="submit" disabled={isSubmitting} className="w-full bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all mt-4 cursor-pointer">
                         {isSubmitting ? "ENVIANDO..." : "SOLICITAR EVALUACIÓN"}
                       </Button>
+                      
+                      <a 
+                        href="https://wa.me/56942713144" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="block text-center text-sm font-medium text-[#26B89A] hover:text-[#1e9980] hover:underline mt-4 transition-colors"
+                      >
+                        ¿Prefieres hablar por WhatsApp? Haz clic aquí
+                      </a>
                     </form>
                   </Form>
                 </CardContent>

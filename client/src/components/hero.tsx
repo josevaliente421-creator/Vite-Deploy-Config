@@ -169,6 +169,15 @@ export default function Hero() {
                       {isSubmitting ? "ENVIANDO..." : "SOLICITAR COTIZACIÓN"}
                     </Button>
                     
+                    <a 
+                      href="https://wa.me/56942713144" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="block text-center text-sm font-medium text-[hsl(168,64%,44%)] hover:text-[hsl(168,64%,35%)] hover:underline mt-4 transition-colors"
+                    >
+                      ¿Prefieres hablar por WhatsApp? Haz clic aquí
+                    </a>
+                    
                     <p className="text-xs text-center text-gray-400 mt-4">
                       Tus datos están protegidos. No enviamos spam.
                     </p>
