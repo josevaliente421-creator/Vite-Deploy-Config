@@ -12,6 +12,7 @@ import * as z from "zod";
 import { CheckCircle2, Phone, ShieldAlert, Zap, Search, Target, LayoutDashboard, History, MessageSquare, MapPin, PhoneCall, Bug } from "lucide-react";
 import TrustBar from "@/components/trust-bar";
 import { useToast } from "@/hooks/use-toast";
+import { useSEO } from "@/hooks/use-seo";
 
 const formSchema = z.object({
   espacio: z.string().min(1, "Seleccione tipo de espacio"),
@@ -21,6 +22,11 @@ const formSchema = z.object({
 });
 
 export default function Desinsectacion() {
+  useSEO(
+    "Manejo de Insectos y Fumigación | Andes Plagas",
+    "Servicio de fumigación y desinsectación profesional en Santiago. Controlamos plagas con productos seguros y resolución sanitaria. ¡Contáctanos hoy!"
+  );
+
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
@@ -87,7 +93,7 @@ export default function Desinsectacion() {
         <div className="absolute inset-0 z-0">
           <img
             src="/hero-desinsectacion.png"
-            alt="Control de insectos profesional"
+            alt="Fumigación profesional y manejo de insectos en Santiago - Andes Plagas"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-transparent"></div>
@@ -264,7 +270,7 @@ export default function Desinsectacion() {
               <Card key={i} className="overflow-hidden border-0 shadow-2xl shadow-gray-200/60 group cursor-pointer rounded-2xl flex flex-col h-full">
                 <div className="h-56 overflow-hidden relative">
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500 z-10"></div>
-                  <img src={sol.img} alt={sol.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src={sol.img} alt={`Servicio de desinsectación para ${sol.title.toLowerCase()} en Santiago`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 </div>
                 <CardContent className="p-8 flex flex-col flex-grow">
                   <h3 className="text-2xl font-bold mb-4 text-[#0F172A]">Desinsectación para {sol.title}</h3>
@@ -289,7 +295,7 @@ export default function Desinsectacion() {
             ].map((t, i) => (
               <Card key={i} className="p-0 border-0 shadow-xl overflow-hidden rounded-2xl flex flex-col bg-white">
                 <div className="h-40 overflow-hidden">
-                  <img src={t.img} alt={t.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                  <img src={t.img} alt={`Cliente satisfecho con servicio de desinsectación - ${t.name}`} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                 </div>
                 <div className="p-8">
                   <MessageSquare className="text-[#26B89A] w-10 h-10 mb-6 opacity-20" />

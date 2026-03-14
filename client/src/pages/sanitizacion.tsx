@@ -12,6 +12,7 @@ import * as z from "zod";
 import { CheckCircle2, Phone, ShieldAlert, Zap, Search, Target, LayoutDashboard, History, MessageSquare, MapPin, PhoneCall, ShieldCheck, Waves, ClipboardCheck, Sparkles } from "lucide-react";
 import TrustBar from "@/components/trust-bar";
 import { useToast } from "@/hooks/use-toast";
+import { useSEO } from "@/hooks/use-seo";
 
 const formSchema = z.object({
   espacio: z.string().min(1, "Seleccione tipo de espacio"),
@@ -21,6 +22,11 @@ const formSchema = z.object({
 });
 
 export default function Sanitizacion() {
+  useSEO(
+    "Servicio de Sanitización Certificada en Santiago | Andes Plagas",
+    "Andes Plagas ofrece servicio de sanitización en Santiago con resolución sanitaria. Eliminamos virus y bacterias con protocolos certificados. ¡Cotiza aquí!"
+  );
+
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
@@ -87,7 +93,7 @@ export default function Sanitizacion() {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1584744982491-665216d95f8b?q=80&w=2070&auto=format&fit=crop"
-            alt="Técnico realizando sanitización"
+            alt="Especialista realizando servicio de sanitización certificada en Santiago - Andes Plagas"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-transparent"></div>
@@ -267,7 +273,7 @@ export default function Sanitizacion() {
             <div className="rounded-3xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1584622781564-1d9876a3e740?q=80&w=2070&auto=format&fit=crop" 
-                alt="Sanitización industrial profesional" 
+                alt="Servicio de sanitización industrial profesional en Santiago - Andes Plagas" 
                 className="w-full h-full object-cover"
               />
             </div>
@@ -287,7 +293,7 @@ export default function Sanitizacion() {
             ].map((t, i) => (
               <Card key={i} className="p-0 border-0 shadow-xl overflow-hidden rounded-2xl flex flex-col bg-white">
                 <div className="h-40 overflow-hidden">
-                  <img src={t.img} alt={t.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                  <img src={t.img} alt={`Empresa que confía en nuestro servicio de sanitización en Santiago - ${t.name}`} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                 </div>
                 <div className="p-8">
                   <MessageSquare className="text-[#26B89A] w-10 h-10 mb-6 opacity-20" />

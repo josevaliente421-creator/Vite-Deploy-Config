@@ -54,7 +54,7 @@ export default function Services() {
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors z-10"></div>
                 <img 
                   src={service.image} 
-                  alt={service.title} 
+                  alt={`Servicio profesional de ${service.title.toLowerCase()} en Santiago - Andes Plagas`} 
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
                 <div className="absolute top-4 right-4 z-20 bg-white p-3 rounded-full shadow-md">

@@ -77,7 +77,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src="/hero-bg.png"
-          alt="Técnicos de control de plagas"
+          alt="Técnicos de Andes Plagas realizando control de plagas y sanitización en Santiago"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[hsl(212,32%,16%)]/90 via-[hsl(212,32%,16%)]/70 to-transparent"></div>

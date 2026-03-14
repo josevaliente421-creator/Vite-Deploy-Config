@@ -46,7 +46,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-2 group cursor-pointer">
             <img 
               src="https://res.cloudinary.com/dojxjnqsg/image/upload/v1773520878/f3a3b2ff-3e00-4a9c-856c-a421cc227182.png" 
-              alt="Andes Plagas Logo" 
+              alt="Andes Plagas - Control de plagas y sanitización en Santiago" 
               className="h-14 w-auto object-contain group-hover:scale-105 transition-transform"
             />
             <div className="flex flex-col">

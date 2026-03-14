@@ -3,8 +3,14 @@ import Hero from "@/components/hero";
 import TrustBar from "@/components/trust-bar";
 import Services from "@/components/services";
 import Footer from "@/components/footer";
+import { useSEO } from "@/hooks/use-seo";
 
 export default function Home() {
+  useSEO(
+    "Andes Plagas | Control de Plagas y Sanitización en Santiago",
+    "Andes Plagas ofrece control profesional de plagas y sanitización en Santiago con protocolos certificados y resolución sanitaria al día. ¡Cotiza tu evaluación hoy!"
+  );
+
   return (
     <div className="min-h-screen bg-white">
       <Navbar />

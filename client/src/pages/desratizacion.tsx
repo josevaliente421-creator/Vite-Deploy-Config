@@ -12,6 +12,7 @@ import * as z from "zod";
 import { CheckCircle2, Phone, ShieldAlert, Zap, Search, Target, LayoutDashboard, History, MessageSquare, MapPin, PhoneCall } from "lucide-react";
 import TrustBar from "@/components/trust-bar";
 import { useToast } from "@/hooks/use-toast";
+import { useSEO } from "@/hooks/use-seo";
 
 const formSchema = z.object({
   propiedad: z.string().min(1, "Seleccione tipo de propiedad"),
@@ -21,6 +22,11 @@ const formSchema = z.object({
 });
 
 export default function Desratizacion() {
+  useSEO(
+    "Control de Roedores y Desratización | Andes Plagas Chile",
+    "Especialistas en control de roedores y desratización en Santiago. Protege tu empresa u hogar con nuestra resolución sanitaria al día. ¡Solicita evaluación!"
+  );
+
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const form = useForm<z.infer<typeof formSchema>>({
@@ -87,7 +93,7 @@ export default function Desratizacion() {
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop"
-            alt="Control de plagas industrial"
+            alt="Técnico realizando control de roedores y desratización en Santiago - Andes Plagas"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A]/90 via-[#0F172A]/70 to-transparent"></div>
@@ -271,7 +277,7 @@ export default function Desratizacion() {
               <Card key={i} className="overflow-hidden border-0 shadow-2xl shadow-gray-200/60 group cursor-pointer rounded-2xl flex flex-col h-full">
                 <div className="h-56 overflow-hidden relative">
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-500 z-10"></div>
-                  <img src={sol.img} alt={sol.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img src={sol.img} alt={`Servicio de desratización para ${sol.title.toLowerCase()} en Santiago`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                 </div>
                 <CardContent className="p-8 flex flex-col flex-grow">
                   <h3 className="text-2xl font-bold mb-4 text-[#0F172A]">Desratización para {sol.title}</h3>
@@ -296,7 +302,7 @@ export default function Desratizacion() {
             ].map((t, i) => (
               <Card key={i} className="p-0 border-0 shadow-xl overflow-hidden rounded-2xl flex flex-col bg-white">
                 <div className="h-40 overflow-hidden">
-                  <img src={t.img} alt={t.name} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
+                  <img src={t.img} alt={`Cliente satisfecho con servicio de desratización - ${t.name}`} className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500" />
                 </div>
                 <div className="p-8">
                   <MessageSquare className="text-[#26B89A] w-10 h-10 mb-6 opacity-20" />
