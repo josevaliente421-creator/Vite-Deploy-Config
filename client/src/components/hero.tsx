@@ -94,23 +94,6 @@ export default function Hero() {
             <p className="text-lg text-gray-200 md:text-xl max-w-lg leading-relaxed font-light">
               Protegemos tu salud y tu negocio con protocolos certificados y Resolución Sanitaria al día. Expertos en normativa SEREMI.
             </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button 
-                size="lg" 
-                className="bg-[hsl(168,64%,44%)] hover:bg-[hsl(168,64%,35%)] text-white font-bold rounded-lg shadow-lg hover:shadow-[hsl(168,64%,44%)]/50 transition-all text-base h-14 px-8"
-              >
-                Ver Planes Empresas
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-[hsl(212,32%,16%)] font-bold rounded-lg text-base h-14 px-8"
-              >
-                Ver Soluciones Hogar
-              </Button>
-            </div>
           </div>
 
           {/* Right Content - Floating Form */}

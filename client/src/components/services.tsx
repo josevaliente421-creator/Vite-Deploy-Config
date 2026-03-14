@@ -18,7 +18,7 @@ const services = [
     icon: <Bug className="w-10 h-10 text-[hsl(168,64%,44%)]" />,
     description: "Eliminación de insectos rastreros y voladores con productos de bajo impacto.",
     features: ["Normativa SEREMI", "Reportes técnicos", "Calendario anual"],
-    image: "https://images.unsplash.com/photo-1584650549422-497dfb5c1638?auto=format&fit=crop&q=80&w=800", // Stock placeholder
+    image: "/service-desinsectacion.png",
     color: "hsl(23,79%,55%)",
     slug: "/desinsectacion"
   },
