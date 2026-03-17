@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -14,6 +15,7 @@ const formSchema = z.object({
   plaga: z.string().min(1, "Seleccione un tipo de plaga"),
   email: z.string().email("Ingrese un correo válido"),
   contacto: z.string().min(1, "Ingrese su teléfono o WhatsApp"),
+  comentarios: z.string().optional(),
 });
 
 export default function Hero() {
@@ -25,6 +27,7 @@ export default function Hero() {
       plaga: "",
       email: "",
       contacto: "",
+      comentarios: "",
     },
   });
 
@@ -40,6 +43,7 @@ export default function Hero() {
           servicio: values.plaga,
           email: values.email,
           telefono: values.contacto,
+          comentarios: values.comentarios,
           origen: "Hero Form"
         }),
       });
@@ -173,6 +177,24 @@ export default function Hero() {
                           <FormLabel className="font-semibold text-gray-700">WhatsApp / Teléfono</FormLabel>
                           <FormControl>
                             <Input placeholder="+56 9 ..." {...field} className="h-12 border-gray-200 bg-white" />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="comentarios"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="font-semibold text-gray-700">Detalles adicionales</FormLabel>
+                          <FormControl>
+                            <Textarea 
+                              placeholder="Ej: Tengo mascotas, el local es de dos pisos, vi rastros en la cocina..." 
+                              className="min-h-[100px] resize-y border-gray-200 bg-white"
+                              {...field} 
+                            />
                           </FormControl>
                           <FormMessage />
                         </FormItem>

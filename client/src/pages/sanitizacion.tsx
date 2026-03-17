@@ -4,6 +4,7 @@ import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useForm } from "react-hook-form";
@@ -19,6 +20,7 @@ const formSchema = z.object({
   metros: z.string().min(1, "Ingrese metros aproximados"),
   email: z.string().email("Ingrese un correo válido"),
   telefono: z.string().min(1, "Ingrese su teléfono"),
+  comentarios: z.string().optional(),
 });
 
 export default function Sanitizacion() {
@@ -36,6 +38,7 @@ export default function Sanitizacion() {
       metros: "",
       email: "",
       telefono: "",
+      comentarios: "",
     },
   });
 
@@ -53,6 +56,7 @@ export default function Sanitizacion() {
           metros: values.metros,
           email: values.email,
           telefono: values.telefono,
+          comentarios: values.comentarios,
           origen: "Página Sanitización"
         }),
       });
@@ -168,6 +172,12 @@ export default function Sanitizacion() {
                         <FormItem>
                           <FormLabel className="font-semibold text-gray-700">Teléfono / WhatsApp</FormLabel>
                           <FormControl><Input placeholder="+56 9..." {...field} className="bg-white h-12 border-gray-200" /></FormControl>
+                        </FormItem>
+                      )} />
+                      <FormField control={form.control} name="comentarios" render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="font-semibold text-gray-700">Detalles adicionales</FormLabel>
+                          <FormControl><Textarea placeholder="Ej: Tengo mascotas, el local es de dos pisos, vi rastros en la cocina..." {...field} className="bg-white min-h-[100px] resize-y border-gray-200" /></FormControl>
                         </FormItem>
                       )} />
                       <Button type="submit" disabled={isSubmitting} className="w-full bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all mt-4 cursor-pointer">
