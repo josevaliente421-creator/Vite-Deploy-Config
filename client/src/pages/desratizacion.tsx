@@ -181,7 +181,7 @@ export default function Desratizacion() {
                       )} />
                       <FormField control={form.control} name="comentarios" render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="font-semibold text-gray-700">Detalles adicionales</FormLabel>
+                          <FormLabel className="font-semibold text-gray-700">Mensaje</FormLabel>
                           <FormControl><Textarea placeholder="Ej: Tengo mascotas, el local es de dos pisos, vi rastros en la cocina..." {...field} className="bg-white min-h-[100px] resize-y border-gray-200" /></FormControl>
                         </FormItem>
                       )} />

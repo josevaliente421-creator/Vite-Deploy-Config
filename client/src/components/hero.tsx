@@ -188,7 +188,7 @@ export default function Hero() {
                       name="comentarios"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="font-semibold text-gray-700">Detalles adicionales</FormLabel>
+                          <FormLabel className="font-semibold text-gray-700">Mensaje</FormLabel>
                           <FormControl>
                             <Textarea 
                               placeholder="Ej: Tengo mascotas, el local es de dos pisos, vi rastros en la cocina..." 
