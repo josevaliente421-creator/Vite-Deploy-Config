@@ -6,6 +6,7 @@ export default function FloatingWhatsApp() {
       rel="noopener noreferrer"
       className="fixed bottom-[20px] right-[20px] z-[9999] w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] bg-[#25D366] hover:bg-[#20ba59] text-white rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.15)] hover:scale-110 transition-all duration-300 flex items-center justify-center cursor-pointer"
       aria-label="Chat en WhatsApp"
+      onClick={() => { if (typeof window.gtag_report_conversion === 'function') window.gtag_report_conversion(); }}
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

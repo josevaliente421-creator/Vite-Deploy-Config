@@ -1,0 +1,73 @@
+Instale la etiqueta de Google en todas las páginas de su sitio web.
+Abra el archivo HTML de cada página.
+Seleccione alguna de las siguientes opciones:
+Si aún no instaló la etiqueta de Google en su sitio web, copie la que aparece a continuación y péguela entre las etiquetas head (<head></head>):
+
+<!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16650567440"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-16650567440'); </script>
+
+Obtenga más información sobre cómo configurar la etiqueta de Google.
+
+Si instaló la etiqueta global en su sitio web desde otro producto de Google (por ejemplo, Google Analytics) o desde otra cuenta de Google Ads, copie el comando "config" que aparece a continuación y agréguelo a cada instancia de la etiqueta de Google, justo antes de la etiqueta de cierre </script>.
+
+gtag('config', 'AW-16650567440');
+
+Si usted o una cuenta de administrador ya instalaron la etiqueta de Google en su sitio web mientras configuraban la etiqueta para otra acción de conversión, asegúrese de que la etiqueta se incluya en todas las páginas de su sitio web y compruebe que el comando "config" tenga este ID de conversión de la cuenta de Google Ads: AW-16650567440.
+Guarde los cambios en sus páginas web.
+
+Instale el fragmento de evento en la página que tiene el botón o vínculo del que desea hacer un seguimiento.
+Abra el archivo HTML de la página.
+Copie el fragmento que aparece a continuación y péguelo entre las etiquetas head (<head></head>) de la página, justo después de la etiqueta de Google.
+
+<!-- Event snippet for Contacto conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-16650567440/jWl-CNCeuMoZEJD-zYM-', 'event_callback': callback }); return false; } </script>
+
+
+Agregue un atributo onclick directamente al código del botón o el vínculo del que desea realizar un seguimiento. El código que utilice dependerá de cómo aparezcan el vínculo o botón en su sitio, ya sea como un vínculo de texto, una imagen o la imagen de un botón.
+
+Cómo agregar el código a un vínculo de texto: En el código que aparece a continuación, reemplace "http://example.com/your-link" por la URL del vínculo de su sitio web o teléfono, y "Descargar ahora" por el texto de su vínculo.
+
+<a onclick="return gtag_report_conversion('http://example.com/your-link');" href="http://example.com/your-link">Descargar ahora</a>
+
+Cómo agregar el código a un botón: Este código le muestra cómo agregar la funcionalidad del seguimiento de clics a un botón mediante la etiqueta <button>. Reemplace "http://example.com/your-link" por la URL de su sitio web.
+
+<button onclick="return gtag_report_conversion('http://example.com/your-link')">Enviar</button>
+
+Cómo agregar el código a la imagen de un botón: En el código que aparece a continuación, reemplace "download_button.gif" por la imagen de su botón, width y height por los parámetros de su imagen, y "http://example.com/your-link" por la URL de su vínculo.
+
+<img src="download_button.gif" alt="Descargar informe técnico" width="32" height="32" onclick="return gtag_report_conversion('http://example.com/your-link')" />
+
+Guarde los cambios en su página web.
+PÁGINAS DE AMP
+
+Debe seguir estas instrucciones para todas las páginas creadas con el marco de trabajo de AMP.
+
+Instale la etiqueta de Google en todas las páginas de su sitio web.
+Abra el archivo HTML de cada página.
+Seleccione alguna de las siguientes opciones:
+Si aún no instaló la etiqueta de Google en su sitio web, agregue estas dos:
+Primero, copie la etiqueta que aparece a continuación y péguela entre las etiquetas head (<head></head>), antes de la biblioteca AMP JS.
+
+<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+
+Luego, copie la etiqueta que aparece a continuación y péguela entre las etiquetas body (<body></body>) de todas sus páginas de AMP.
+
+<!-- Google tag (gtag.js) --> <amp-analytics type="gtag" data-credentials="include"> <script type="application/json"> { "vars": { "gtag_id": "AW-16650567440", "config": { "AW-16650567440": { "groups": "default" } } }, "triggers": { } } </script> </amp-analytics>
+
+Obtenga más información sobre cómo configurar la etiqueta de Google.
+Si instaló la etiqueta global en su sitio web desde otro producto de Google (por ejemplo, Google Analytics) o desde otra cuenta de Google Ads, copie la línea que aparece a continuación y agréguela en la sección "config" de cada instancia de la etiqueta de Google.
+
+"AW-16650567440": { "groups": "default" }
+
+Si usted o una cuenta de administrador ya instalaron la etiqueta de Google en su sitio web mientras configuraban la etiqueta para otra acción de conversión, asegúrese de que la etiqueta se incluya en todas las páginas de su sitio web y compruebe que la sección "config" tenga este ID de conversión de la cuenta de Google Ads: AW-16650567440.
+Guarde los cambios en sus páginas web.
+
+Instale el fragmento de evento en la página que tiene el botón o vínculo del que desea hacer un seguimiento.
+Abra el archivo HTML de la página.
+Busque un selector CSS para el botón o vínculo del que desea hacer un seguimiento. Por ejemplo, podría utilizar "#purchase" o ".out-button" si su botón está configurado de la siguiente manera:
+
+<button id="purchase" class="out-button">Clic</button>
+
+Copie el fragmento que aparece a continuación y péguelo en la sección "triggers" de la etiqueta de Google. Cambie el valor de "selector" para que coincida con el elemento en el que se hace clic.
+
+"C_cECqBWoX9II": { "on": "click", "selector": "CSS_SELECTOR", "vars": { "event_name": "conversion", "send_to": ["AW-16650567440/jWl-CNCeuMoZEJD-zYM-"] } }
+
+Guarde los cambios en su página web.
