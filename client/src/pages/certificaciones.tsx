@@ -83,7 +83,7 @@ export default function Certificaciones() {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a href="/#quote-form-hero">
                 <Button size="lg" className="w-full sm:w-auto bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 px-8 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all cursor-pointer">
-                  Solicitar Evaluación
+                  Cotizar Servicio Empresa
                 </Button>
               </a>
               <a href="https://wa.me/56942713144" target="_blank" rel="noopener noreferrer" onClick={() => { if (typeof window.gtag_report_conversion === 'function') window.gtag_report_conversion(); }}>

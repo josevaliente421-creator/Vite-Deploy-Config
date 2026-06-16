@@ -38,12 +38,12 @@ export default function Services() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-5">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold font-display text-[hsl(212,32%,16%)] mb-4">
-            Nuestros Servicios
+          <h2 className="text-3xl md:text-4xl font-bold font-display text-[hsl(212,32%,16%)] mb-4 uppercase tracking-tight">
+            Planes de Manejo Integrado de Plagas (MIP)
           </h2>
           <div className="w-20 h-1 bg-[hsl(168,64%,44%)] mx-auto rounded-full"></div>
-          <p className="mt-4 text-gray-500 max-w-2xl mx-auto">
-            Soluciones integrales certificadas para mantener tus espacios libres de plagas y seguros para las personas.
+          <p className="mt-4 text-gray-500 max-w-2xl mx-auto font-medium">
+            Programas preventivos corporativos con documentación técnica completa para auditorías y fiscalizaciones de la Autoridad Sanitaria (SEREMI).
           </p>
         </div>
 

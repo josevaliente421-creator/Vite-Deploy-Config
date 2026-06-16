@@ -93,7 +93,7 @@ export default function Navbar() {
             onClick={handleQuoteClick}
             className="bg-[hsl(23,79%,55%)] hover:bg-[hsl(23,79%,45%)] text-white rounded-full px-6 font-bold shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-0.5 cursor-pointer"
           >
-            COTIZAR AHORA
+            COTIZAR EMPRESA
           </Button>
         </div>
 
@@ -126,7 +126,7 @@ export default function Navbar() {
           
           <div className="pt-4 pb-2 border-t border-gray-100 flex flex-col gap-3 mt-2">
             <Button onClick={handleQuoteClick} className="w-full h-14 bg-[hsl(23,79%,55%)] text-white rounded-xl font-bold text-lg cursor-pointer hover:bg-[hsl(23,79%,45%)]">
-              COTIZAR AHORA
+              COTIZAR EMPRESA
             </Button>
             
             <a href="https://wa.me/56942713144" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => { if (typeof window.gtag_report_conversion === 'function') window.gtag_report_conversion(); }}>
