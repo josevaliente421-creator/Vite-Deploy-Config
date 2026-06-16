@@ -1,0 +1,44 @@
+1. El Formulario de Cotización (El punto más crítico)
+El Problema: Tu formulario actual pide Tipo de Servicio, Correo, WhatsApp y Mensaje. Es demasiado genérico. Un particular que tiene una barata en su cocina lo llena en 5 segundos.
+
+El Cambio B2B: Necesitamos aumentar la fricción para el residencial y facilitar la información para el corporativo. Debes agregar los siguientes campos obligatorios:
+
+Nombre de la Empresa / Razón Social
+
+Giro o Rubro (Ej: Restaurante, Bodega, Oficina, Local Comercial).
+
+RUT de la Empresa (Opcional, pero filtra de golpe al 95% de los particulares).
+
+El Gancho: En lugar de "Solicitar Cotización", usa un botón con más peso corporativo: "Solicitar Cotización Formal / Certificado SEREMI".
+
+2. La Propuesta de Valor y Encabezado (Above the Fold)
+Lo que tienes: "Protegemos tu salud y tu negocio con protocolos certificados y Resolución Sanitaria al día. Expertos en normativa SEREMI." (Está bien, pero diluye el foco al incluir "salud" personal).
+
+El Cambio B2B: El texto principal debe gritarle al encargado de local, administrador o prevencionista de riesgos.
+
+Propuesta de Titular: "Control de Plagas Integrales para Empresas y Locales Comerciales"
+
+Subtítulo: "Evita multas y clausuras. Entregamos Certificados con Resolución Sanitaria SEREMI al día para patentes y auditorías en toda la Región Metropolitana."
+
+3. Reducción de la Fuga por WhatsApp
+El Problema: Tienes botones flotantes y llamados gigantes a WhatsApp. El cliente B2B institucional (el que te va a contratar un servicio mensual o un contrato anual) prefiere dejar los datos de su empresa en un formulario para recibir una cotización en PDF que pueda presentar a su jefatura. WhatsApp es la vía favorita del residencial que quiere saber "cuánto me cobras por ir a mi casa hoy".
+
+El Cambio B2B: Reduce el protagonismo del botón de WhatsApp en la versión de escritorio. En los llamados a la acción, prioriza siempre el formulario con textos como "Cotizar Servicio Empresa".
+
+4. Estructura de Servicios (Lo que busca una Empresa)
+Lo que tienes: Desratización, Desinsectación, Sanitización. (Es correcto, pero muy básico).
+
+El Cambio B2B: Las empresas no compran "fumigación", compran cumplimiento legal y continuidad de su negocio. Añade un bloque que destaque:
+
+Planes de Manejo Integrado de Plagas (MIP): Con calendarios anuales y contratos mensuales.
+
+Documentación Técnica Completa: Carpetas sanitarias, fichas técnicas de los productos (autorizados por el ISP) y certificados de ejecución inmediata exigidos por la SEREMI de Salud.
+
+Resumen del Plan de Acción para la Web:
+Si puedes editar la landing tú mismo o con tu programador, haz estos tres ajustes hoy mismo:
+
+Cambia el título principal de la web enfocándolo solo a Empresas, Industrias y Locales.
+
+Modifica el formulario añadiendo el campo "Empresa / Rubro".
+
+Asegúrate de que el aviso de Google Ads que dice "Falta el recurso de formulario de leads" se solucione vinculando correctamente las conversiones del formulario de tu web con la cuenta de Google Ads.
