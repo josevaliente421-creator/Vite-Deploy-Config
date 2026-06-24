@@ -19,12 +19,9 @@ const formSchema = z.object({
   propiedad: z.string().min(1, "Seleccione tipo de propiedad"),
   infestacion: z.string().min(1, "Seleccione nivel de infestación"),
   empresa: z.string().min(2, "El nombre de la empresa es requerido"),
-  rubro: z.string().min(2, "El giro o rubro es requerido"),
-  rut: z.string().optional(),
   ciudad: z.string().min(2, "La ciudad es requerida"),
   email: z.string().email("Ingrese un correo válido"),
   telefono: z.string().min(1, "Ingrese su teléfono"),
-  comentarios: z.string().optional(),
 });
 
 export default function Desratizacion() {
@@ -41,12 +38,9 @@ export default function Desratizacion() {
       propiedad: "",
       infestacion: "",
       empresa: "",
-      rubro: "",
-      rut: "",
       ciudad: "",
       email: "",
       telefono: "",
-      comentarios: "",
     },
   });
 
@@ -63,12 +57,9 @@ export default function Desratizacion() {
           propiedad: values.propiedad,
           infestacion: values.infestacion,
           empresa: values.empresa,
-          rubro: values.rubro,
-          rut: values.rut,
           ciudad: values.ciudad,
           email: values.email,
           telefono: values.telefono,
-          comentarios: values.comentarios,
           origen: "Página Desratización Empresa"
         }),
       });
@@ -152,8 +143,8 @@ export default function Desratizacion() {
               <Card className="shadow-2xl border-0 bg-white/95 backdrop-blur-sm">
                 <div className="h-2 w-full bg-[#E8762E]"></div>
                 <CardHeader>
-                  <CardTitle className="text-2xl font-bold text-[#0F172A] text-center font-display">Solicitar Cotización Formal</CardTitle>
-                  <p className="text-center text-gray-500 text-sm">Respuesta inmediata</p>
+                  <CardTitle className="text-2xl font-bold text-[#0F172A] text-center font-display">Cotización Rápida</CardTitle>
+                  <p className="text-center text-gray-500 text-sm">No pidas la resolución sanitaria, agenda hoy mismo</p>
                 </CardHeader>
                 <CardContent>
                   <Form {...form}>
@@ -187,28 +178,11 @@ export default function Desratizacion() {
 
                       <FormField control={form.control} name="empresa" render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="font-semibold text-gray-700">Nombre de la Empresa / Razón Social</FormLabel>
+                          <FormLabel className="font-semibold text-gray-700">Nombre de la Empresa</FormLabel>
                           <FormControl><Input placeholder="Ej: Comercializadora SPA" {...field} className="bg-white h-12 border-gray-200" /></FormControl>
                           <FormMessage />
                         </FormItem>
                       )} />
-
-                      <div className="grid grid-cols-2 gap-4">
-                        <FormField control={form.control} name="rubro" render={({ field }) => (
-                          <FormItem>
-                            <FormLabel className="font-semibold text-gray-700">Giro / Rubro</FormLabel>
-                            <FormControl><Input placeholder="Ej: Restaurante, Oficina..." {...field} className="bg-white h-12 border-gray-200" /></FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )} />
-                        <FormField control={form.control} name="rut" render={({ field }) => (
-                          <FormItem>
-                            <FormLabel className="font-semibold text-gray-700">RUT (Opcional)</FormLabel>
-                            <FormControl><Input placeholder="Ej: 76.123.456-7" {...field} className="bg-white h-12 border-gray-200" /></FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )} />
-                      </div>
 
                       <div className="grid grid-cols-2 gap-4">
                         <FormField control={form.control} name="ciudad" render={({ field }) => (
@@ -232,14 +206,8 @@ export default function Desratizacion() {
                           <FormControl><Input placeholder="+56 9..." {...field} className="bg-white h-12 border-gray-200" /></FormControl>
                         </FormItem>
                       )} />
-                      <FormField control={form.control} name="comentarios" render={({ field }) => (
-                        <FormItem>
-                          <FormLabel className="font-semibold text-gray-700">Mensaje</FormLabel>
-                          <FormControl><Textarea placeholder="Ej: Tengo mascotas, el local es de dos pisos, vi rastros en la cocina..." {...field} className="bg-white min-h-[100px] resize-y border-gray-200" /></FormControl>
-                        </FormItem>
-                      )} />
                       <Button type="submit" disabled={isSubmitting} className="w-full bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all mt-4 cursor-pointer">
-                        {isSubmitting ? "ENVIANDO..." : "SOLICITAR COTIZACIÓN FORMAL"}
+                        {isSubmitting ? "ENVIANDO..." : "COTIZACIÓN RÁPIDA"}
                       </Button>
                       
                       <a 

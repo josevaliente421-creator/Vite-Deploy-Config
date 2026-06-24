@@ -10,8 +10,8 @@ export default function TrustBar() {
   return (
     <section className="bg-gray-50 py-10 border-b border-gray-100 overflow-hidden">
       <div className="container mx-auto px-5 mb-8 text-center">
-        <p className="text-sm font-semibold text-gray-500 uppercase tracking-widest">
-          Más de 500 empresas confían en nuestra gestión anual
+        <p className="text-sm font-semibold text-[hsl(212,32%,16%)] uppercase tracking-widest">
+          Más de 500 empresas ya pasaron sus auditorías SEREMI con nosotros
         </p>
       </div>
       

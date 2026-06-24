@@ -14,12 +14,9 @@ import { useToast } from "@/hooks/use-toast";
 const formSchema = z.object({
   plaga: z.string().min(1, "Seleccione un tipo de plaga"),
   empresa: z.string().min(2, "El nombre de la empresa es requerido"),
-  rubro: z.string().min(2, "El giro o rubro es requerido"),
-  rut: z.string().optional(),
   ciudad: z.string().min(2, "La ciudad es requerida"),
   email: z.string().email("Ingrese un correo válido"),
   contacto: z.string().min(1, "Ingrese su teléfono o WhatsApp"),
-  comentarios: z.string().optional(),
 });
 
 export default function Hero() {
@@ -30,12 +27,9 @@ export default function Hero() {
       defaultValues: {
       plaga: "",
       empresa: "",
-      rubro: "",
-      rut: "",
       ciudad: "",
       email: "",
       contacto: "",
-      comentarios: "",
     },
   });
 
@@ -50,13 +44,10 @@ export default function Hero() {
         body: JSON.stringify({
           servicio: values.plaga,
           empresa: values.empresa,
-          rubro: values.rubro,
-          rut: values.rut,
           ciudad: values.ciudad,
           email: values.email,
           telefono: values.contacto,
-          comentarios: values.comentarios,
-          origen: "Hero Form Empresa"
+          origen: "Hero Form Empresa Rápido"
         }),
       });
 
@@ -119,11 +110,11 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg text-gray-200 md:text-xl max-w-lg leading-relaxed font-light">
-              Evita multas y clausuras. Entregamos Certificados con Resolución Sanitaria SEREMI al día para patentes y auditorías en toda la Región Metropolitana.
+              ¿Tienes una auditoría sanitaria pronto? Obtén tu Certificado SEREMI con nuestros programas MIP diseñados exclusivamente para empresas y restaurantes.
             </p>
             <div className="flex flex-col md:flex-row gap-3 pt-6 w-full">
               <Button onClick={scrollToForm} size="lg" className="w-full md:flex-1 bg-[#E8762E] hover:bg-[#D16524] text-white font-bold h-14 px-8 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all cursor-pointer">
-                Cotizar Servicio Empresa
+                Cotización Rápida
               </Button>
               <a href="https://wa.me/56942713144" target="_blank" rel="noopener noreferrer" className="w-full md:flex-[0.5]" onClick={() => { if (typeof window.gtag_report_conversion === 'function') window.gtag_report_conversion(); }}>
                 <Button size="lg" variant="outline" className="w-full bg-[#25D366]/10 border-2 border-[#25D366] text-white hover:bg-[#25D366] hover:text-white font-bold h-14 px-4 rounded-lg transition-all cursor-pointer flex items-center justify-center gap-2">
@@ -176,7 +167,7 @@ export default function Hero() {
                       name="empresa"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="font-semibold text-gray-700">Nombre de la Empresa / Razón Social</FormLabel>
+                          <FormLabel className="font-semibold text-gray-700">Nombre de Empresa o Razón Social</FormLabel>
                           <FormControl>
                             <Input placeholder="Ej: Comercializadora SPA" {...field} className="h-12 border-gray-200 bg-white" />
                           </FormControl>
@@ -184,35 +175,6 @@ export default function Hero() {
                         </FormItem>
                       )}
                     />
-
-                    <div className="grid grid-cols-2 gap-4">
-                      <FormField
-                        control={form.control}
-                        name="rubro"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel className="font-semibold text-gray-700">Giro / Rubro</FormLabel>
-                            <FormControl>
-                              <Input placeholder="Ej: Restaurante, Oficina..." {...field} className="h-12 border-gray-200 bg-white" />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                      <FormField
-                        control={form.control}
-                        name="rut"
-                        render={({ field }) => (
-                          <FormItem>
-                            <FormLabel className="font-semibold text-gray-700">RUT (Opcional)</FormLabel>
-                            <FormControl>
-                              <Input placeholder="Ej: 76.123.456-7" {...field} className="h-12 border-gray-200 bg-white" />
-                            </FormControl>
-                            <FormMessage />
-                          </FormItem>
-                        )}
-                      />
-                    </div>
                     
                     <div className="grid grid-cols-2 gap-4">
                       <FormField
@@ -257,30 +219,12 @@ export default function Hero() {
                       )}
                     />
 
-                    <FormField
-                      control={form.control}
-                      name="comentarios"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel className="font-semibold text-gray-700">Mensaje</FormLabel>
-                          <FormControl>
-                            <Textarea 
-                              placeholder="Ej: Tengo mascotas, el local es de dos pisos, vi rastros en la cocina..." 
-                              className="min-h-[100px] resize-y border-gray-200 bg-white"
-                              {...field} 
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-
                     <Button 
                       type="submit" 
                       disabled={isSubmitting}
                       className="w-full bg-[#E8762E] hover:bg-[#D16524] text-white font-bold text-lg h-14 rounded-lg shadow-lg hover:shadow-orange-500/30 transition-all mt-2 cursor-pointer"
                     >
-                      {isSubmitting ? "ENVIANDO..." : "SOLICITAR COTIZACIÓN"}
+                      {isSubmitting ? "ENVIANDO..." : "SOLICITAR COTIZACIÓN RÁPIDA"}
                     </Button>
                     
                     <a 
