@@ -21,6 +21,7 @@ const formSchema = z.object({
   empresa: z.string().min(2, "El nombre de la empresa es requerido"),
   rubro: z.string().min(2, "El giro o rubro es requerido"),
   rut: z.string().optional(),
+  comuna: z.string().min(2, "La comuna es requerida"),
   email: z.string().email("Ingrese un correo válido"),
   telefono: z.string().min(1, "Ingrese su teléfono"),
   comentarios: z.string().optional(),
@@ -42,6 +43,7 @@ export default function Desinsectacion() {
       empresa: "",
       rubro: "",
       rut: "",
+      comuna: "",
       email: "",
       telefono: "",
       comentarios: "",
@@ -63,6 +65,7 @@ export default function Desinsectacion() {
           empresa: values.empresa,
           rubro: values.rubro,
           rut: values.rut,
+          comuna: values.comuna,
           email: values.email,
           telefono: values.telefono,
           comentarios: values.comentarios,
@@ -200,12 +203,22 @@ export default function Desinsectacion() {
                         )} />
                       </div>
 
-                      <FormField control={form.control} name="email" render={({ field }) => (
-                        <FormItem>
-                          <FormLabel className="font-semibold text-gray-700">Email</FormLabel>
-                          <FormControl><Input placeholder="correo@ejemplo.com" {...field} className="bg-white h-12 border-gray-200" /></FormControl>
-                        </FormItem>
-                      )} />
+                      <div className="grid grid-cols-2 gap-4">
+                        <FormField control={form.control} name="comuna" render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="font-semibold text-gray-700">Comuna</FormLabel>
+                            <FormControl><Input placeholder="Ej: Providencia" {...field} className="bg-white h-12 border-gray-200" /></FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )} />
+                        <FormField control={form.control} name="email" render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="font-semibold text-gray-700">Email</FormLabel>
+                            <FormControl><Input placeholder="correo@ejemplo.com" {...field} className="bg-white h-12 border-gray-200" /></FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )} />
+                      </div>
                       <FormField control={form.control} name="telefono" render={({ field }) => (
                         <FormItem>
                           <FormLabel className="font-semibold text-gray-700">Teléfono / WhatsApp</FormLabel>

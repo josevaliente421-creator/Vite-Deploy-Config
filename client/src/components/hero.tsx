@@ -16,6 +16,7 @@ const formSchema = z.object({
   empresa: z.string().min(2, "El nombre de la empresa es requerido"),
   rubro: z.string().min(2, "El giro o rubro es requerido"),
   rut: z.string().optional(),
+  comuna: z.string().min(2, "La comuna es requerida"),
   email: z.string().email("Ingrese un correo válido"),
   contacto: z.string().min(1, "Ingrese su teléfono o WhatsApp"),
   comentarios: z.string().optional(),
@@ -31,6 +32,7 @@ export default function Hero() {
       empresa: "",
       rubro: "",
       rut: "",
+      comuna: "",
       email: "",
       contacto: "",
       comentarios: "",
@@ -50,6 +52,7 @@ export default function Hero() {
           empresa: values.empresa,
           rubro: values.rubro,
           rut: values.rut,
+          comuna: values.comuna,
           email: values.email,
           telefono: values.contacto,
           comentarios: values.comentarios,
@@ -211,19 +214,34 @@ export default function Hero() {
                       />
                     </div>
                     
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel className="font-semibold text-gray-700">Correo Electrónico</FormLabel>
-                          <FormControl>
-                            <Input placeholder="ejemplo@correo.com" {...field} className="h-12 border-gray-200 bg-white" />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
+                    <div className="grid grid-cols-2 gap-4">
+                      <FormField
+                        control={form.control}
+                        name="comuna"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="font-semibold text-gray-700">Comuna</FormLabel>
+                            <FormControl>
+                              <Input placeholder="Ej: Las Condes" {...field} className="h-12 border-gray-200 bg-white" />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                      <FormField
+                        control={form.control}
+                        name="email"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="font-semibold text-gray-700">Correo Electrónico</FormLabel>
+                            <FormControl>
+                              <Input placeholder="ejemplo@correo.com" {...field} className="h-12 border-gray-200 bg-white" />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+                    </div>
 
                     <FormField
                       control={form.control}
