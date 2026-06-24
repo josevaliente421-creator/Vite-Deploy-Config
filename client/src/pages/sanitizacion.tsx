@@ -21,7 +21,7 @@ const formSchema = z.object({
   empresa: z.string().min(2, "El nombre de la empresa es requerido"),
   rubro: z.string().min(2, "El giro o rubro es requerido"),
   rut: z.string().optional(),
-  comuna: z.string().min(2, "La comuna es requerida"),
+  ciudad: z.string().min(2, "La ciudad es requerida"),
   email: z.string().email("Ingrese un correo válido"),
   telefono: z.string().min(1, "Ingrese su teléfono"),
   comentarios: z.string().optional(),
@@ -43,7 +43,7 @@ export default function Sanitizacion() {
       empresa: "",
       rubro: "",
       rut: "",
-      comuna: "",
+      ciudad: "",
       email: "",
       telefono: "",
       comentarios: "",
@@ -65,7 +65,7 @@ export default function Sanitizacion() {
           empresa: values.empresa,
           rubro: values.rubro,
           rut: values.rut,
-          comuna: values.comuna,
+          ciudad: values.ciudad,
           email: values.email,
           telefono: values.telefono,
           comentarios: values.comentarios,
@@ -206,10 +206,10 @@ export default function Sanitizacion() {
                       </div>
 
                       <div className="grid grid-cols-2 gap-4">
-                        <FormField control={form.control} name="comuna" render={({ field }) => (
+                        <FormField control={form.control} name="ciudad" render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="font-semibold text-gray-700">Comuna</FormLabel>
-                            <FormControl><Input placeholder="Ej: Providencia" {...field} className="bg-white h-12 border-gray-200" /></FormControl>
+                            <FormLabel className="font-semibold text-gray-700">Ciudad</FormLabel>
+                            <FormControl><Input placeholder="Ej: Santiago" {...field} className="bg-white h-12 border-gray-200" /></FormControl>
                             <FormMessage />
                           </FormItem>
                         )} />
