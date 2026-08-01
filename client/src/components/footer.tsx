@@ -59,11 +59,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:contacto@andesplagas.cl" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
+                <a href="mailto:gerencia@andesplgas.cl" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors group">
                   <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[hsl(168,64%,44%)] transition-colors">
                     <Mail className="w-5 h-5" />
                   </div>
-                  <span>contacto@andesplagas.cl</span>
+                  <span>gerencia@andesplgas.cl</span>
                 </a>
               </li>
             </ul>
