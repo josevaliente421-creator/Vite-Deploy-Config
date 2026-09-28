@@ -19,6 +19,7 @@ const formSchema = z
     tipoCliente: z.string().min(1, "Seleccione el tipo de cliente"),
     empresa: z.string().optional(),
     telefono: z.string().min(8, "Ingrese un teléfono de contacto"),
+    email: z.string().email("Ingrese un correo válido"),
     problema: z.string().min(1, "Seleccione el problema"),
     comuna: z.string().optional(),
     mensaje: z.string().optional(),
@@ -74,6 +75,7 @@ export default function QuoteForm({
       tipoCliente: "",
       empresa: "",
       telefono: "",
+      email: "",
       problema: defaultProblem || "",
       comuna: "",
       mensaje: "",
@@ -107,8 +109,9 @@ export default function QuoteForm({
           problema: values.problema,
           comuna: values.comuna || "",
           ciudad: values.comuna || "",
-          email: "",
+          email: values.email,
           mensaje: values.mensaje || "",
+          comentario: values.mensaje || "",
           origen: `Formulario ${serviceLabel}`,
           page: currentPage(),
         }),
@@ -230,22 +233,13 @@ export default function QuoteForm({
               <div className="grid sm:grid-cols-2 gap-4">
                 <FormField
                   control={form.control}
-                  name="problema"
+                  name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel className="font-semibold text-gray-700">Problema</FormLabel>
-                      <Select onValueChange={field.onChange} defaultValue={field.value}>
-                        <FormControl>
-                          <SelectTrigger className="h-12 border-gray-200 bg-white">
-                            <SelectValue placeholder="Seleccione..." />
-                          </SelectTrigger>
-                        </FormControl>
-                        <SelectContent className="bg-white">
-                          {PROBLEMS.map((problem) => (
-                            <SelectItem key={problem} value={problem}>{problem}</SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
+                      <FormLabel className="font-semibold text-gray-700">Correo electrónico</FormLabel>
+                      <FormControl>
+                        <Input placeholder="correo@empresa.cl" type="email" autoComplete="email" {...field} className="h-12 border-gray-200 bg-white" />
+                      </FormControl>
                       <FormMessage />
                     </FormItem>
                   )}
@@ -264,6 +258,29 @@ export default function QuoteForm({
                   )}
                 />
               </div>
+
+              <FormField
+                control={form.control}
+                name="problema"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel className="font-semibold text-gray-700">Problema</FormLabel>
+                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                      <FormControl>
+                        <SelectTrigger className="h-12 border-gray-200 bg-white">
+                          <SelectValue placeholder="Seleccione..." />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent className="bg-white">
+                        {PROBLEMS.map((problem) => (
+                          <SelectItem key={problem} value={problem}>{problem}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
 
               <FormField
                 control={form.control}
