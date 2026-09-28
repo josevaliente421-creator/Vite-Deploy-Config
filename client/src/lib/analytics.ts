@@ -1,4 +1,4 @@
-export const SITE_URL = "https://andesplagas.cl";
+export const SITE_URL = "https://www.andesplagas.cl";
 export const WHATSAPP_NUMBER = "56942713144";
 export const PHONE_TEL = "+56942713144";
 export const PHONE_DISPLAY = "+56 9 4271 3144";

@@ -31,10 +31,10 @@ export default function Footer() {
           <div className="space-y-5">
             <div className="flex items-center gap-2">
               <img
-                src="https://res.cloudinary.com/dojxjnqsg/image/upload/v1773520878/f3a3b2ff-3e00-4a9c-856c-a421cc227182.png"
+                src="/logo.webp"
                 alt="Andes Plagas - Especialistas en control de plagas en Santiago"
-                width="56"
-                height="56"
+                width="504"
+                height="296"
                 className="h-14 w-auto object-contain"
               />
               <div className="flex flex-col">

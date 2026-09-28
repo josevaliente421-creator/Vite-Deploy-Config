@@ -2,7 +2,7 @@ import { readFile, writeFile, mkdir } from "fs/promises";
 import path from "path";
 import { FAQS, ROUTES } from "../shared/seo-content";
 
-const SITE_URL = "https://andesplagas.cl";
+const SITE_URL = "https://www.andesplagas.cl";
 
 const ORGANIZATION = {
   "@context": "https://schema.org",
