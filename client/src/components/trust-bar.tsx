@@ -1,40 +1,44 @@
-import { useRef, useEffect } from "react";
-import { cn } from "@/lib/utils";
+import { CheckCircle2, FileCheck, ShieldCheck, PackageCheck } from "lucide-react";
 
-// Placeholder logos using text for now, in a real scenario these would be SVGs
-const logos = [
-  "AgroCorp", "Foodie", "MarketFresh", "CleanSpace", "BioSeguridad", "TechLab", "HotelLux", "RestaurantPro"
+const claims = [
+  {
+    icon: ShieldCheck,
+    title: "Resolución Sanitaria al día",
+    desc: "Autorizados por la Autoridad Sanitaria",
+  },
+  {
+    icon: FileCheck,
+    title: "Documentación SEREMI",
+    desc: "Certificados para fiscalizaciones y auditorías",
+  },
+  {
+    icon: PackageCheck,
+    title: "Insumos con registro ISP",
+    desc: "Productos autorizados en Chile",
+  },
 ];
 
 export default function TrustBar() {
   return (
-    <section className="bg-gray-50 py-10 border-b border-gray-100 overflow-hidden">
-      <div className="container mx-auto px-5 mb-8 text-center">
-        <p className="text-sm font-semibold text-[hsl(212,32%,16%)] uppercase tracking-widest">
-          Más de 500 empresas ya pasaron sus auditorías SEREMI con nosotros
+    <section className="bg-gray-50 border-b border-gray-100 py-10">
+      <div className="container mx-auto px-5">
+        <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+          {claims.map((claim, index) => (
+            <div key={index} className="flex items-center gap-3 justify-center sm:justify-start">
+              <div className="w-11 h-11 shrink-0 rounded-full bg-[hsl(168,64%,44%)]/10 flex items-center justify-center">
+                <claim.icon className="w-5 h-5 text-[hsl(168,64%,44%)]" />
+              </div>
+              <div>
+                <p className="font-bold text-[hsl(212,32%,16%)] text-sm leading-tight">{claim.title}</p>
+                <p className="text-gray-500 text-xs leading-tight mt-0.5">{claim.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="text-center text-xs text-gray-400 mt-6 flex items-center justify-center gap-1.5">
+          <CheckCircle2 className="w-3.5 h-3.5 text-[hsl(168,64%,44%)]" />
+          Programas MIP (Manejo Integrado de Plagas) para empresas en Santiago y la Región Metropolitana
         </p>
-      </div>
-      
-      <div className="relative flex overflow-x-hidden">
-        <div className="animate-marquee whitespace-nowrap flex items-center">
-          {logos.concat(logos).map((logo, index) => (
-            <div key={index} className="mx-8 md:mx-16 opacity-50 hover:opacity-100 transition-opacity cursor-default grayscale hover:grayscale-0">
-              <span className="text-2xl font-bold font-display text-gray-400 hover:text-[hsl(168,64%,44%)] transition-colors">
-                {logo}
-              </span>
-            </div>
-          ))}
-        </div>
-
-        <div className="absolute top-0 animate-marquee2 whitespace-nowrap flex items-center">
-          {logos.concat(logos).map((logo, index) => (
-            <div key={index} className="mx-8 md:mx-16 opacity-50 hover:opacity-100 transition-opacity cursor-default grayscale hover:grayscale-0">
-              <span className="text-2xl font-bold font-display text-gray-400 hover:text-[hsl(168,64%,44%)] transition-colors">
-                {logo}
-              </span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

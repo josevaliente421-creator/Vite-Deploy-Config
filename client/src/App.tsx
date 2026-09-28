@@ -8,16 +8,20 @@ import Desratizacion from "@/pages/desratizacion";
 import Sanitizacion from "@/pages/sanitizacion";
 import Desinsectacion from "@/pages/desinsectacion";
 import Certificaciones from "@/pages/certificaciones";
+import ControlDePlagasEmpresas from "@/pages/control-de-plagas-empresas";
+import PoliticaDePrivacidad from "@/pages/politica-de-privacidad";
 import FloatingWhatsApp from "@/components/floating-whatsapp";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/control-de-plagas-empresas" component={ControlDePlagasEmpresas} />
       <Route path="/desratizacion" component={Desratizacion} />
       <Route path="/sanitizacion" component={Sanitizacion} />
       <Route path="/desinsectacion" component={Desinsectacion} />
       <Route path="/certificaciones" component={Certificaciones} />
+      <Route path="/politica-de-privacidad" component={PoliticaDePrivacidad} />
       <Route component={NotFound} />
     </Switch>
   );

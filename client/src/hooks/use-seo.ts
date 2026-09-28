@@ -1,31 +1,72 @@
 import { useEffect } from "react";
+import { SITE_URL } from "@/lib/analytics";
 
-export function useSEO(title: string, description: string) {
+function upsertMeta(selector: string, attr: string, value: string, create: () => HTMLElement) {
+  let el = document.querySelector(selector);
+  if (!el) {
+    el = create();
+    document.head.appendChild(el);
+  }
+  el.setAttribute(attr, value);
+}
+
+function upsertCanonical(href: string) {
+  let el = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+  if (!el) {
+    el = document.createElement("link");
+    el.setAttribute("rel", "canonical");
+    document.head.appendChild(el);
+  }
+  el.setAttribute("href", href);
+}
+
+export function useSEO(
+  title: string,
+  description: string,
+  options?: { noindex?: boolean },
+) {
   useEffect(() => {
     document.title = title;
-    
-    // Update meta description
-    let metaDescription = document.querySelector('meta[name="description"]');
-    if (!metaDescription) {
-      metaDescription = document.createElement('meta');
-      metaDescription.setAttribute('name', 'description');
-      document.head.appendChild(metaDescription);
-    }
-    metaDescription.setAttribute('content', description);
 
-    // Update og:title and twitter:title
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute('content', title);
-    
-    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
-    if (twitterTitle) twitterTitle.setAttribute('content', title);
+    upsertMeta('meta[name="description"]', "content", description, () => {
+      const meta = document.createElement("meta");
+      meta.setAttribute("name", "description");
+      return meta;
+    });
 
-    // Update og:description and twitter:description
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.setAttribute('content', description);
+    const path = window.location.pathname || "/";
+    const canonical = `${SITE_URL}${path === "/" ? "/" : path.replace(/\/$/, "")}`;
+    upsertCanonical(canonical);
 
-    const twitterDesc = document.querySelector('meta[name="twitter:description"]');
-    if (twitterDesc) twitterDesc.setAttribute('content', description);
-
-  }, [title, description]);
+    upsertMeta('meta[property="og:url"]', "content", canonical, () => {
+      const meta = document.createElement("meta");
+      meta.setAttribute("property", "og:url");
+      return meta;
+    });
+    upsertMeta('meta[property="og:title"]', "content", title, () => {
+      const meta = document.createElement("meta");
+      meta.setAttribute("property", "og:title");
+      return meta;
+    });
+    upsertMeta('meta[property="og:description"]', "content", description, () => {
+      const meta = document.createElement("meta");
+      meta.setAttribute("property", "og:description");
+      return meta;
+    });
+    upsertMeta('meta[name="twitter:title"]', "content", title, () => {
+      const meta = document.createElement("meta");
+      meta.setAttribute("name", "twitter:title");
+      return meta;
+    });
+    upsertMeta('meta[name="twitter:description"]', "content", description, () => {
+      const meta = document.createElement("meta");
+      meta.setAttribute("name", "twitter:description");
+      return meta;
+    });
+    upsertMeta('meta[name="robots"]', "content", options?.noindex ? "noindex, nofollow" : "index, follow", () => {
+      const meta = document.createElement("meta");
+      meta.setAttribute("name", "robots");
+      return meta;
+    });
+  }, [title, description, options?.noindex]);
 }
